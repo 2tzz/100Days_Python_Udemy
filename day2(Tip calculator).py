@@ -72,6 +72,9 @@ if input1 == 'left':
         if input3 == 'yellow':
             print("⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶ You win you found the treasure ⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶")
 
+            print('''
+                       ''')
+
         elif input3 == 'blue':
             print("eaten by beasts.game over.")
 
