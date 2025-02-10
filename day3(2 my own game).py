@@ -27,10 +27,12 @@ elif input1 == 'offroad' :
 
 elif input1 == 'grip' or 'road' :
     print("Congrads you took 1st place for frist part of the track")
-
+   
+    input2 = 0
+   
     input2 = int(input("Enter what gear you want to choose for next off road part 1 ,2 ,3 ,4 :"))
 
-    if input2 == 1 or 2 :
+    if input2 == 1 or input2 == 2 : 
         print("congrads you took 1st place for 2nd part of the track race !!")
 
         input3 = int(input("you are entering last icy part of the track ! \n what speed u want to drive enter between 0 - 250  :"))
@@ -51,10 +53,13 @@ elif input1 == 'grip' or 'road' :
                          ) (
                        _.' '._
                       `"""""""`   ''')
+        elif input3 <= 250 :
+            print("your car slip on the ice and crashed ! you loose the race !")
+
         else :
             print("WRONG INPUT")
 
-    elif input2 == 3 or 4 :
+    elif input2 == 3 or input2 == 4 :
         print ("Nooo ! wrong gear you stuck on the mud . You loose!")
 
     else:
