@@ -108,8 +108,37 @@ while (letter_count + symbol_count + number_count) < (nr_letters + nr_symbols +n
 
 #hard challenge done ;]
 
+#hard challenge another way
+
+password_list = []
 
 
+
+print("     Your hard type 2  password is : ",end="")
+
+
+for i in range(0,nr_letters) :
+
+    password_list.append(random.choice(letters))
+
+for i in range(0,nr_symbols) :
+
+    password_list.append(random.choice(symbols))
+
+
+for i in range(0,nr_numbers) :
+
+    password_list.append(random.choice(numbers))
+
+
+random.shuffle(password_list)
+
+password = ""
+
+for char in password_list :
+    password += char
+
+print(password)
 
 
 
