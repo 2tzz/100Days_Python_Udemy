@@ -1,6 +1,9 @@
 
 import random
 
+
+#hangman game my implimentation 2tzz
+
 words_list = ['apple','keyboard','phone','computer','moniter','programmer','bucket','allow','river']
 
 
@@ -26,16 +29,16 @@ for j in range(0,word_len):
 
     rec_list.append('_')
 
+rec_word = ""
+for k in rec_list :
+    rec_word += k
+
+print(rec_word)
     
 while win_count < word_len and try_count < (win_count + 7) :
     guess = input("enter a character  : ").lower()
 
-    rec_word = " "
-
-    for k in rec_list :
-        rec_word += k
-
-    print(rec_word)
+    
 
     for i in chosen_word :
 
@@ -130,7 +133,7 @@ while win_count < word_len and try_count < (win_count + 7) :
         print("Is the correct word")
     inc2 = 0
 
-    rec_word = " "
+    rec_word = ""
 
     for k in rec_list :
         rec_word += k
@@ -138,6 +141,6 @@ while win_count < word_len and try_count < (win_count + 7) :
     print(rec_word)
 
 
-if try_count == win_count and try_count == word_len :
-    print("you Win !!!") 
+if chosen_word == rec_word :
+    print ("you win !  !  ! ")
         
