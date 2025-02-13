@@ -36,11 +36,13 @@
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 direction = input("type 'encode' to encrypt , type 'decode' to decrypt :\n").lower()
-text = input("type your messege : \n").lower()
-shift = int(input("Type the shift number :"))
+
 
 
 def encode_process(text , shift):
+    
+
+
     text_list = []
     output_list = []
     char_position = 0
@@ -90,7 +92,7 @@ def encode_process(text , shift):
     print (f"your encrypted word : {encr_word}")
 
 
-encode_process(text , shift)
+
 
 def decode_process(input_text , reverseshift) :
     
@@ -105,42 +107,49 @@ def decode_process(input_text , reverseshift) :
     
     print(input_list)
 
-    for j in input_list :
+    for l in input_list :
 
-        for k in alphabet : 
+        for n in alphabet : 
             
 
-            char_position2 = alphabet.index(k)
+            char_position2 = alphabet.index(n)
                 
-            if j == k and (char_position2 - reverseshift >= 0) :
+            if l == n  :
                 
                 char_position2 = char_position2 - reverseshift
                 output_list2.append(alphabet[char_position2])
                 char_position2 = 0
                 
 
-            elif j == k and (char_position2 - reverseshift < 0):
-                
-                char_position2 = char_position2 - reverseshift 
-                output_list2.append(alphabet[char_position2])
-                char_position2 = 0
-
-            elif j != k :
+            elif l != n :
                 l_count += 1
                 if l_count == 26 :
-                    output_list2.append(j)
+                    output_list2.append(l)
 
             else :
                 output_list2.append(' ')
         
         l_count = 0
    
-    encr_word = ''
+    dec_word = ''
     for l in output_list2:
-        encr_word += l
+        dec_word += l
 
 
-    print (f"your encrypted word : {encr_word}")
+    print (f"your decoded word : {dec_word}")
 
 
 
+if direction == 'encode':
+    text = input("type your messege : \n").lower()
+    shift = int(input("Type the shift number :"))
+    encode_process(text , shift)
+
+elif direction == 'decode':
+    input_text = input("type your messege to decode : \n").lower()
+    reverseshift = int(input("Type the reverseshift number :"))
+    decode_process(input_text , reverseshift)
+
+
+
+    #simple word decorder $ encorder by 2tzzz
