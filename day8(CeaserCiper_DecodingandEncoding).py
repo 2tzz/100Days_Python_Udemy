@@ -44,24 +44,103 @@ def encode_process(text , shift):
     text_list = []
     output_list = []
     char_position = 0
+    
+    l_count = 0
 
     for  i in text :
         text_list.append(i)
     
-    for j in text_list :
-        for k in alphabet :
-            if j == k:
-                char_position = alphabet.index(k)
-                if char_position + shift <= 26:
-                    char_position = char_position + shift
-                    output_list.append(alphabet[char_position])
-                elif char_position + shift > 26:
-                    char_position = char_position + shift - 26
-                    output_list.append(alphabet[char_position])
+    print(text_list)
 
+    for j in text_list :
+
+        for k in alphabet : 
             
 
-    print(output_list)
+            char_position = alphabet.index(k)
+                
+            if j == k and (char_position + shift <= 26) :
+                
+                char_position = char_position + shift
+                output_list.append(alphabet[char_position])
+                char_position = 0
+                
+
+            elif j == k and (char_position + shift > 26):
+                
+                char_position = char_position + shift - 26
+                output_list.append(alphabet[char_position])
+                char_position = 0
+
+            elif j != k :
+                l_count += 1
+                if l_count == 26 :
+                    output_list.append(j)
+
+            else :
+                output_list.append(' ')
+        
+        l_count = 0
+   
+    encr_word = ''
+    for l in output_list:
+        encr_word += l
+
+
+    print (f"your encrypted word : {encr_word}")
 
 
 encode_process(text , shift)
+
+def decode_process(input_text , reverseshift) :
+    
+    input_list = []
+    output_list2 = []
+    char_position2 = 0
+    
+    l_count = 0
+
+    for  i in input_text :
+        input_list.append(i)
+    
+    print(input_list)
+
+    for j in input_list :
+
+        for k in alphabet : 
+            
+
+            char_position2 = alphabet.index(k)
+                
+            if j == k and (char_position2 - reverseshift >= 0) :
+                
+                char_position2 = char_position2 - reverseshift
+                output_list2.append(alphabet[char_position2])
+                char_position2 = 0
+                
+
+            elif j == k and (char_position2 - reverseshift < 0):
+                
+                char_position2 = char_position2 - reverseshift 
+                output_list2.append(alphabet[char_position2])
+                char_position2 = 0
+
+            elif j != k :
+                l_count += 1
+                if l_count == 26 :
+                    output_list2.append(j)
+
+            else :
+                output_list2.append(' ')
+        
+        l_count = 0
+   
+    encr_word = ''
+    for l in output_list2:
+        encr_word += l
+
+
+    print (f"your encrypted word : {encr_word}")
+
+
+
