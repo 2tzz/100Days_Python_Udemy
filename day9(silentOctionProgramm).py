@@ -108,7 +108,20 @@ while bidders == 'yes'  :
 
     print(bidder_info)
 
+def find_highest_biddder(bidder_dic):
+    highest_bid = 0
+    winner = ""
+    for bidder in bidder_dic:
+        bid_amount = bidder_dic[bidder]
+
+        if bid_amount > highest_bid:
+            highest_bid = bid_amount
+            winner = bidder
+
+    print(f"the winner is {winner}  with a bid of ${highest_bid}")
 
 
 
+
+find_highest_biddder(bidder_info)
 ########################
