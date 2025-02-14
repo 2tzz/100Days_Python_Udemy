@@ -49,16 +49,66 @@
 # print(nesterd_list[2][0])
 
 
-travel_log = {
-    "France": {
-       "cities_visited" : ["Paris" , "Lille" , "Dijon"] ,
-       "total_visits" : 12
-    },
-    "Germany" : {
-        "cities_visited" : ["Berlin" , "Hamburg" , "Stuttgart"],
-        "total_visits" : 5
-    }
-}
+# travel_log = {
+#     "France": {
+#        "cities_visited" : ["Paris" , "Lille" , "Dijon"] ,
+#        "total_visits" : 12
+#     },
+#     "Germany" : {
+#         "cities_visited" : ["Berlin" , "Hamburg" , "Stuttgart"],
+#         "total_visits" : 5
+#     }
+# }
 
 
-print(travel_log["Germany"]["cities_visited"][2])
+# print(travel_log["Germany"]["cities_visited"][2])
+
+
+# if bidders == 'yes':
+
+#     cont += 1
+
+# while bidders != 'no':
+
+#     name = input("What is your name ?")
+
+#     bid = input("what is yor bid ? : $")
+
+#     bidders = input("Is there any bidders type 'yes' or 'no' :")
+
+#     bidder_info[name] = bid_list[bid]
+
+#     print(bidder_info)
+        
+
+
+############################### totezz ###########################
+
+bidder_info = {}
+cont = 0
+bid_list = []
+
+print("welcome to secreat auction program ! ")
+
+bidders = 'yes'
+
+
+
+while bidders == 'yes'  :
+
+    
+
+    name = input("What is your name ?").lower()
+
+    bid = int(input("what is yor bid ? : $"))
+
+    bidders = input("Is there any bidders type 'yes' or 'no' :").lower()
+
+    bidder_info[name] = bid
+
+    print(bidder_info)
+
+
+
+
+########################
