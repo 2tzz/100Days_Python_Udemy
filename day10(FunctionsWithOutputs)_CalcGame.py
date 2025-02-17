@@ -14,20 +14,20 @@
 # format_name(f_name , l_name)
 
 
-def is_leap_year(year):
-    if year % 4 != 0:
-        return 0
+# def is_leap_year(year):
+#     if year % 4 != 0:
+#         return 0
     
-    elif year % 4 ==0 :
+#     elif year % 4 ==0 :
         
-        if year % 100 ==0 and year % 400 != 0  :
+#         if year % 100 ==0 and year % 400 != 0  :
             
-            return 0
+#             return 0
         
-        else :
-            return 1
+#         else :
+#             return 1
   
-input_y = int(input()  )    
+# input_y = int(input()  )    
         
-print(bool(is_leap_year(input_y)))   
+# print(bool(is_leap_year(input_y)))   
 
