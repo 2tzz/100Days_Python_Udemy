@@ -84,3 +84,6 @@ while direction == 'y' or 'n' :
     elif direction == 'n' :
 
         input_1 = float(input("What is your frist number : "))
+
+
+#done
