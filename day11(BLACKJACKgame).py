@@ -17,6 +17,9 @@ cont = input("Do you want to play BLACKJACK ? 'y' or 'n' ? ")
 
 while cont == 'y' :
 
+
+    print("======================== NEW GAME ======================")
+
     player_cards.append(random.choice(cards))
     player_cards.append(random.choice(cards))
     dealer_cards.append(random.choice(cards))
@@ -79,3 +82,5 @@ while cont == 'y' :
     plyer_total = 0
     dealer_total = 0
     temp = 0   
+
+    #0343146479
