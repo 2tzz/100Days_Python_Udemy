@@ -25,7 +25,7 @@
 #     elif student_scores[i] > 80:
 #         student_scores[i] = 'Exceeds Expectations'
         
-#     elif student_scores[i] >70:
+#     elif student_scores[i] >70:c
 #         student_scores[i] = 'Acceptable'
     
 #     elif student_scores[i] <= 70 :
