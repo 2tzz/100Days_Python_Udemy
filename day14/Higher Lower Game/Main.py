@@ -8,6 +8,10 @@ vs2i = 0
 vs2s = ''
 x = 0
 score =  0
+game_over = True
+
+str_change = ''
+int_change = 0
 
 
 
@@ -37,27 +41,59 @@ print(vs)
 
 print("B : " , vs2s)
 
-user_input = input("Wich one has more followers  enter 'A' or 'B'  : ")
 
 
-if user_input == 'A' :
+while game_over == True :
 
-    if vs1i > vs2i :
+    
 
-        print("you are correct !!")
-        score += 1
+    user_input = input("Wich one has more followers  enter 'A' or 'B'  : ")
 
-    else :
-        print("Sorry u are wrong")
 
-elif  user_input == 'B':
+    if user_input == 'A' :
 
-    if vs2i > vs1i :
+        if vs1i > vs2i :
+            vs2i , vs2s = rand_item(data)
+            print("you are correct !!")
+            score += 1
 
-        print("you are correct !!")
-        score += 1
-    else :
-        print("Sorry u are wrong")
+            print ("A : " , vs1s)
+
+            print(vs)
+
+            print("B : " , vs2s)
+
+
+
+        else :
+            print("Sorry u are wrong")
+            game_over = False
+
+    elif  user_input == 'B':
+
+        if vs2i > vs1i :
+            vs1i , vs1s = rand_item(data)
+            print("you are correct !!")
+            score += 1
+
+            vs1i = int_change
+            vs1i = vs2i
+            vs2i = int_change
+
+            vs1s = str_change
+            vs1s = vs2s
+            vs2s = str_change
+
+            print ("A : " , vs1s)
+
+            print(vs)
+
+            print("B : " , vs2s)
+
+
+        else :
+            print("Sorry u are wrong")
+            game_over = False
 
 
 
