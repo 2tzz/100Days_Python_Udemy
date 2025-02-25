@@ -1,7 +1,7 @@
 # Day 10 - Functions With Outputs
 ## Calculator App
 
-![](calculator_app.gif)
+![](calgame.gif)
 
 
 
