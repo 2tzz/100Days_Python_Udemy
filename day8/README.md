@@ -1,7 +1,7 @@
 # Day 8 - Function Parameters & Caesar Cipher
 ## Caesar Cipher
 
-![](day8/Ceaser_Chiper.gif)
+![](Ceaser_Chiper.gif)
 
 
 
