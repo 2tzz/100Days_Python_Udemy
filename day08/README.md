@@ -1,9 +1,9 @@
 # Day 8 - Function Parameters & Caesar Cipher
 ## Caesar Cipher
 
-![](Caesar_Cipher.gif)
+![](Ceaser_Chiper.gif)
 
-[Replit - Caesar Cipher]()
+
 
 
 ## Exercises
