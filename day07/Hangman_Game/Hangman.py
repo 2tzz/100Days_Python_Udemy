@@ -1,5 +1,6 @@
 
 import random
+from hangman_art import logo
 
 
 #hangman game my implimentation 2tzz
@@ -32,6 +33,9 @@ for j in range(0,word_len):
 rec_word = ""
 for k in rec_list :
     rec_word += k
+
+
+print(logo)
 
 print(rec_word)
     
