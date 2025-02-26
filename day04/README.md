@@ -1,7 +1,7 @@
 # Day 4 - Randomization and Python Lists
 ## Rock Paper Scissors
 
-![](rock_paper_scissors.gif)
+![](Rock_Paper_scissors.gif)
 
 
 
