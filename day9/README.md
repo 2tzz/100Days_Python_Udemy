@@ -6,7 +6,7 @@
 
 ![](silent_auction_game.gif)
 
-[Replit @RD3NI - Blind Auction](https://replit.com/@RD3NI/blind-auction)
+[Replit  - Blind Auction]()
 
 
 ## Exercises
