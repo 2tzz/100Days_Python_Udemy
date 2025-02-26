@@ -1,7 +1,7 @@
 # Day 5 - Python Loops
 ## PyPassword Generator
 
-![](pypassword_generator.gif)
+![](password_generator.gif)
 
 
 
