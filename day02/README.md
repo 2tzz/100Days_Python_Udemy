@@ -1,7 +1,7 @@
 # Day 3 - Control Flow and Logical Operators
 ## Treasure Island
 
-![](Tresure_hunt.gif)
+![](Treasure_hunt.gif)
 
 
 
