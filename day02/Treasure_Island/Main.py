@@ -26,15 +26,15 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************''')
 
-input1 = input("oh there is a split on the roadway do you want to choose left or right ?").lower()
+input1 = input("oh there is a split on the roadway do you want to choose left or right ? \n").lower()
 
 if input1 == 'left':
-    input2 = input("swim or wait ?").lower()
+    input2 = input("swim or wait ? \n").lower()
 
     if input2 == 'wait':
-        print("boat arrived and took you to an island")
+        print("boat arrived and took you to an island \n")
         
-        input3 = input("there are three doors blue , red and yellow wich one u choose?").lower()
+        input3 = input("there are three doors blue , red and yellow wich one u choose?  \n").lower()
 
         if input3 == 'yellow':
             print("⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶ You win you found the treasure ⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶")
@@ -43,18 +43,18 @@ if input1 == 'left':
                        ''')
 
         elif input3 == 'blue':
-            print("eaten by beasts.game over.")
+            print("eaten by beasts.game over.  \n")
 
         elif input3 == 'red':
-            print("room full of fire.Game over")
+            print("room full of fire.Game over  \n")
 
         else :
             print("wrong input")
 
 
     elif input2 == 'swim':
-        print("Attaked by trout Gamer over")
+        print("Attaked by trout Gamer over  \n")
     else:
         print("wrong input")
 else :
-    print("Fall in to a hall game over")
+    print("Fall in to a hall game over  \n")
