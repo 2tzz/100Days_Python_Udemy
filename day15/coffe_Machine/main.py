@@ -104,7 +104,7 @@ def calc_cofee (resources , input_resorces , input_price  , item_price):
 
 change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
 
-print ( change , remaining_resorces)
+print ( change * 100 , remaining_resorces)
 
 
 
