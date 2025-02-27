@@ -70,26 +70,6 @@ def calc_coins(quarters ,dimes ,nickles ,pennies ):
 
         return float(quarters * 0.25 + dimes * 0.10 + nickles * 0.05 + pennies * 0.01)
 
-order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
-
-order_details , cofee_price =  cofee_details(order)
-
-
-print(f"{order}  will be {cofee_price}$  plese  enter coins below \n")
-
-quarters = float(input("put quaters  here : "))
-dimes = float(input("put dimes  here : "))
-nickles = float(input("put nickles  here : "))
-pennies = float(input("put pennies  here : "))
-
-total = calc_coins(quarters ,dimes ,nickles ,pennies )
-
-
-print(total)
-
-print (order_details , cofee_price)
-
-
 #quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01
 
 def calc_cofee (resources , input_resorces , input_price  , item_price):
@@ -104,9 +84,28 @@ def calc_cofee (resources , input_resorces , input_price  , item_price):
 
     return change , resources
 
+
+
+
+order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
+
+order_details , cofee_price =  cofee_details(order)
+
+
+print(f"{order}  will be {cofee_price}$  plese  enter coins below \n")
+
+quarters = float(input("put quaters  here : "))
+dimes = float(input("put dimes  here : "))
+nickles = float(input("put nickles  here : "))
+pennies = float(input("put pennies  here : "))
+
+total = calc_coins(quarters ,dimes ,nickles ,pennies )
+
+print(total)
+
 change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
 
-print ( round(change, 2 ) , remaining_resorces)
+print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!")
 
 
 
