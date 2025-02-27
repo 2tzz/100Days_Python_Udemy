@@ -32,7 +32,9 @@ resources = {
 
 
 order_details = {}
+remaining_resorces = {}
 cofee_price = 0
+total = 0
 
 
 def cofee_details(cus_choice):
@@ -64,20 +66,45 @@ def cofee_details(cus_choice):
     else:
         return 0
 
+def calc_coins(quarters ,dimes ,nickles ,pennies ):
+
+        return quarters * 0.25 + dimes * 0.1 + nickles * 0.05 + pennies * 0.01
 
 order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
 
 order_details , cofee_price =  cofee_details(order)
 
 
+print(f"{order}  will be {cofee_price}$  plese  enter coins below \n")
+
+quarters = int(input("put quaters  here : "))
+dimes = int(input("put dimes  here : "))
+nickles = int(input("put nickles  here : "))
+pennies = int(input("put pennies  here : "))
+
+total = calc_coins(quarters ,dimes ,nickles ,pennies )
+
+
+print(total)
+
 print (order_details , cofee_price)
 
 
+#quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01
 
+def calc_cofee (resources , input_resorces , input_price  , item_price):
 
-def calc_cofee ():
+    change = 0
 
-    remaining_resorces = {}
+    resources["water"] = resources["water"] - input_resorces["water"]
+
+    change = input_price - item_price
+
+    return change , resources
+
+change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
+
+print ( change , remaining_resorces)
 
 
 
