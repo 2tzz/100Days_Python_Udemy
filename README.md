@@ -17,6 +17,6 @@
 - [Day 11:](https://github.com/cecirio/100-days-of-code/tree/main/logs/day11) The Blackjack Capstone Project
 - [Day 12:](https://github.com/cecirio/100-days-of-code/tree/main/logs/day12) Scope & Number Guessing Game
 - [Day 13:](https://github.com/cecirio/100-days-of-code/tree/main/logs/day13) Debugging: How to Find and Fix Errors in Your Code
-- [Day 14:](https://github.com/cecirio/100-days-of-code/tree/main/logs/day14) Higher Lower Game Project
+- [Day 14:]([Logs/day14](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day14)) Higher Lower Game Project
 ## 📚 Intermediate
 - [Day 15:](https://github.com/cecirio/100-days-of-code/tree/main/logs/day15) Local Development Environment Setup & The Coffee Machine
