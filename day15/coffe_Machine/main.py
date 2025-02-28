@@ -115,49 +115,58 @@ print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!")
 condition = input("Do you want another coffee  type 'y' or 'n'  too check reamainings type 'r' : ")
 
 
-while condition == 'y' :
+while condition == 'y' or condition == 'r' :
 
-    cofee_price = 0
-    total = 0
+    if remaining_resorces["water"] > 0 and  remaining_resorces["milk"] > 0 and remaining_resorces["coffee"] >0 : 
 
-    order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
+        cofee_price = 0
+        total = 0
 
-    order_details , cofee_price =  cofee_details(order)
+        if condition == 'r' :
+            print(f"Water: {remaining_resorces["water"]}  \n milk : {remaining_resorces["milk"]} \n coffee : {remaining_resorces["coffee"]} \n")
 
+        order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
 
-    print(f"{order}  will be {cofee_price}$  plese  enter coins below \n")
-
-    quarters = float(input("put quaters  here : "))
-    dimes = float(input("put dimes  here : "))
-    nickles = float(input("put nickles  here : "))
-    pennies = float(input("put pennies  here : "))
+        order_details , cofee_price =  cofee_details(order)
 
 
+        print(f"{order}  will be {cofee_price}$  plese  enter coins below \n")
 
-    total = calc_coins(quarters ,dimes ,nickles ,pennies )
-
-
-    if total > cofee_price :
-        print(total)
-
-        change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
-
-        print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!\n")
-
-    elif total == cofee_price :
-
-        print(total)
-
-        change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
-
-        print ( f" NO change.  Enjoy your {order} !!! \n")
-
-    elif total < cofee_price :
-        print(total)
-        print ( f" Not enough Money \n")
+        quarters = float(input("put quaters  here : "))
+        dimes = float(input("put dimes  here : "))
+        nickles = float(input("put nickles  here : "))
+        pennies = float(input("put pennies  here : "))
 
 
 
+        total = calc_coins(quarters ,dimes ,nickles ,pennies )
+
+
+        if total > cofee_price :
+
+            print(f"\n you gave us : {total} \n")
+
+            change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price , order)
+
+            print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!\n")
+
+        elif total == cofee_price :
+
+            print(total)
+
+            change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
+
+            print ( f" NO change.  Enjoy your {order} !!! \n")
+
+        elif total < cofee_price :
+            print(total)
+            print ( f" Not enough Money \n")
+
+        condition = input("Do you want another coffee  type 'y' or 'n'  too check reamainings type 'r' : ")
+
+    else :
+
+        print(" sorry  not enough resorces !")
 
 
 
