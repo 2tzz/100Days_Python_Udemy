@@ -9,14 +9,14 @@
 - [Day 03:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day03) Control Flow and Logical Operators
 - [Day 04:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day04) Randomisation and Python Lists
 - [Day 05:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day05) Python Loops
-- [Day 06:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day06) Python Functions & Karel
-- [Day 07:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day07) Hangman
-- [Day 08:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day08) Function Parameters & Caesar Cipher
-- [Day 09:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day09) Dictionaries, Nesting and The Secret Auction
-- [Day 10:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day10) Functions with Outputs
-- [Day 11:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day11) The Blackjack Capstone Project
-- [Day 12:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day12) Scope & Number Guessing Game
-- [Day 13:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day13) Debugging: How to Find and Fix Errors in Your Code
-- [Day 14:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day14) Higher Lower Game Project
+- [Day 06:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day06) Python Functions & Karel
+- [Day 07:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day07) Hangman
+- [Day 08:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day08) Function Parameters & Caesar Cipher
+- [Day 09:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day09) Dictionaries, Nesting and The Secret Auction
+- [Day 10:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day10) Functions with Outputs
+- [Day 11:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day11) The Blackjack Capstone Project
+- [Day 12:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day12) Scope & Number Guessing Game
+- [Day 13:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day13) Debugging: How to Find and Fix Errors in Your Code
+- [Day 14:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day14) Higher Lower Game Project
 ## 📚 Intermediate
-- [Day 15:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day15) Local Development Environment Setup & The Coffee Machine
+- [Day 15:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day15) Local Development Environment Setup & The Coffee Machine
