@@ -135,7 +135,7 @@ while condition == 'y' or condition == 'r'  and order != 'cancel' :
 
     order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) type 'cancel'  to end order process : ")
 
-    if int(remaining_resorces["water"]) > 0 and  int(remaining_resorces["milk"]) > 0 and int(remaining_resorces["coffee"]) >0 :
+    if int(remaining_resorces["water"]) > 0 and  int(remaining_resorces["milk"]) > 0 and int(remaining_resorces["coffee"]) >0  and order != 'cancel':
 
         cofee_price = 0
         total = 0
