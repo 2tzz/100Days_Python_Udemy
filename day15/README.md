@@ -1,5 +1,5 @@
 # Day 15 - Local Development Environment Setup & The Coffee Machine
-## Coffee Machine
+## Coffee Machine intermediate
 
 ![](coffee_machine.gif)
 
