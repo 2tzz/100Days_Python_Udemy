@@ -1,7 +1,7 @@
 # Day 15 - Local Development Environment Setup & The Coffee Machine
 ## Coffee Machine Intermediate python
 
-![](coffee_mc.gif)
+![](coffe_mc.gif)
 
 ## Excercises
 - Functions with Input & Output
