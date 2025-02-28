@@ -1,3 +1,5 @@
+from art import logo
+
 menu = {
     "espresso": {
         "ingredients": {
@@ -37,6 +39,7 @@ cofee_price = 0
 total = 0
 
 
+
 def cofee_details(cus_choice):
 
     order = {}
@@ -62,9 +65,16 @@ def cofee_details(cus_choice):
 
         return order , price
 
+    elif cus_choice == 'cancel' :
+         
+         print("Have a nice day !")
+
+         return order , price
 
     else:
-        return 0
+        print("Error")
+
+        return order , price
 
 def calc_coins(quarters ,dimes ,nickles ,pennies ):
 
@@ -91,6 +101,8 @@ def calc_cofee (resources , input_resorces , input_price  , item_price , orderx)
 cofee_price = 0
 total = 0
 
+print(logo)
+
 order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
 
 order_details , cofee_price =  cofee_details(order)
@@ -115,17 +127,18 @@ print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!")
 condition = input("Do you want another coffee  type 'y' or 'n'  too check reamainings type 'r' : ")
 
 
-while condition == 'y' or condition == 'r' :
 
-    if remaining_resorces["water"] > 0 and  remaining_resorces["milk"] > 0 and remaining_resorces["coffee"] >0 : 
+while condition == 'y' or condition == 'r'  and order != 'cancel' :
+
+    if condition == 'r' :
+            print(f"Water: {remaining_resorces["water"]}  \n milk : {remaining_resorces["milk"]} \n coffee : {remaining_resorces["coffee"]} \n")
+
+    order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) type 'cancel'  to end order process : ")
+
+    if int(remaining_resorces["water"]) > 0 and  int(remaining_resorces["milk"]) > 0 and int(remaining_resorces["coffee"]) >0 :
 
         cofee_price = 0
         total = 0
-
-        if condition == 'r' :
-            print(f"Water: {remaining_resorces["water"]}  \n milk : {remaining_resorces["milk"]} \n coffee : {remaining_resorces["coffee"]} \n")
-
-        order = input("What kind of cofee do you need ? type (espresso/latte/cappuccino) : ")
 
         order_details , cofee_price =  cofee_details(order)
 
@@ -146,7 +159,7 @@ while condition == 'y' or condition == 'r' :
 
             print(f"\n you gave us : {total} \n")
 
-            change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price , order)
+            change , remaining_resorces = calc_cofee(remaining_resorces , order_details ,total , cofee_price , order)
 
             print ( f" Here take the change {round(change, 2 )}$  Enjoy your {order} !!!\n")
 
@@ -154,7 +167,7 @@ while condition == 'y' or condition == 'r' :
 
             print(total)
 
-            change , remaining_resorces = calc_cofee(resources , order_details ,total , cofee_price)
+            change , remaining_resorces = calc_cofee(remaining_resorces , order_details ,total , cofee_price , order)
 
             print ( f" NO change.  Enjoy your {order} !!! \n")
 
@@ -165,7 +178,6 @@ while condition == 'y' or condition == 'r' :
         condition = input("Do you want another coffee  type 'y' or 'n'  too check reamainings type 'r' : ")
 
     else :
-
         print(" sorry  not enough resorces !")
 
 
