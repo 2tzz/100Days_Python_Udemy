@@ -1,9 +1,9 @@
 # 100 Days of Code: Python
-![](assests/python_code.png)
+![](assets/python_code.png)
 
 > Udemy Course: [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/)
 
-## 🔰 Beginner 
+## 📖 Beginner 
 - [Day 01:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day01) Working With Variables in Python to Manage Data
 - [Day 02:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day02) Understanding Data Types and How to Manipulate Strings
 - [Day 03:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/logs/day03) Control Flow and Logical Operators
