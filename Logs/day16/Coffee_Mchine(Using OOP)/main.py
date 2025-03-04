@@ -12,24 +12,34 @@ coffeemaker.__init__()
 moneymachine.__init__()
 
 
+order = 'report'
+conditionx = True
 
 
-order = input(f"What kind of cofee do you need ? type ({menux.get_items()}) or type (report) to get a report : ")
+
+while  conditionx == True and  order == 'report' or order == 'latte' or order == 'espresso' or order == 'cappuccino'  :
+
+    order = input(f"What kind of cofee do you need ? type ({menux.get_items()}) or type (report) to get a report : ")
+
+    if order != 'report' and coffeemaker.is_resource_sufficient(menux.find_drink(order)) != True :
+
+        conditionx = False
+   
+
+    elif order  == 'latte' or order  == 'cappuccino' or order  == 'espresso' :
 
 
-if order  == 'latte' or order  == 'cappuccino' or order  == 'espresso' :
+        if moneymachine.make_payment(menux.find_drink(order).cost) == True :
 
+            coffeemaker.make_coffee(menux.find_drink(order))
+        
 
-    if moneymachine.make_payment(menux.find_drink(order).cost) == True :
+    elif order == 'report':
 
-        coffeemaker.make_coffee(menux.find_drink(order))
+        coffeemaker.report()
+        moneymachine.report()
+
+    else :
+        print(menux.find_drink(order))
+
     
-
-elif order == 'report':
-
-    coffeemaker.report()
-    moneymachine.report()
-
-else :
-    print(menux.find_drink(order))
-
