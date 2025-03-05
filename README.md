@@ -20,3 +20,5 @@
 - [Day 14:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day14) Higher Lower Game Project
 ## 📚 Intermediate
 - [Day 15:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day15) Local Development Environment Setup & The Coffee Machine
+- [Day 16:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day16) Object Oriented Programming (OOP)
+- [Day 17:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day17) The Quiz Project & The Benefits of OOP
