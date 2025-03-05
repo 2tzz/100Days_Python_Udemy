@@ -5,6 +5,7 @@ class QuizBrain :
         self.question_number = 0
         self.question_list = q_list
         self.score = 0
+        self.score2 = 0
 
     
         
@@ -27,13 +28,16 @@ class QuizBrain :
             return False  
 
     def check_answer (self , user_input , correct_answer):
-
+        self.score2 += 1
         if user_input == correct_answer :
             self.score += 1
-            print (f"correct  ✔️    Your score : {self.score} ")
+            print (f"correct  ✔️        Your score : {self.score}/{self.score2} ")
             
 
         else :
-            print(f"Wrong answer ✖️  Your score :{self.score}")
+            print(f"Wrong answer ✖️         Your score :{self.score}/{self.score2}")
         
+        print("\n")
 
+    def final_score (self) :
+        print(f"You've completed the challenge \n Your Finals Score Was {self.score}/{self.score2}")
