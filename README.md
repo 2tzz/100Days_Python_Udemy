@@ -1,7 +1,7 @@
 # 100 Days of Code: Python
 ![](assests/python_code.png)
 
-> Udemy Course: [100 Days of Code: The Complete Python Pro Bootcamp for 2025](https://www.udemy.com/course/100-days-of-code/)
+>  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="15"> Udemy Course: [100 Days of Code: The Complete Python Pro Bootcamp for 2025](https://www.udemy.com/course/100-days-of-code/)
 
 ## 📖 Beginner 
 - [Day 01:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day01) Working With Variables in Python to Manage Data
