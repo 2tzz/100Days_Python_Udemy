@@ -1,7 +1,7 @@
 # Day 18 - Turtle & The Graphical User Interface (GUI)
 ## Hirst Painting
 
-![](hirst_painting.gif)
+![](hirst_paint.gif)
 
 
 ## Python Turtle Exercises
