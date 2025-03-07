@@ -51,12 +51,7 @@ x =  -300
 timmy.ht()
 timmy.speed(0)
 
-
-
 for i in range(10):
-
-    
-
     for j in range(10):
 
         x += 50
@@ -69,8 +64,6 @@ for i in range(10):
 
     x = -300
     y += 50
-
-
 
 screen = Screen ()
 screen.exitonclick ()
