@@ -4,18 +4,20 @@ import random
 refree = Turtle()
 refree.ht()
 
+is_race_on = False
 
 screen = Screen()
 screen.setup(width = 500 ,height =  400)
 
+
 colors = ["red","orange","yellow","green","blue"]
 
 y = -100
+all_turtles = []
 
 
-
-# tim = Turtle(shape="turtle" )
-# tim.color("Red")
+# new_turtle = Turtle(shape="turtle" )
+# new_turtle.color("Red")
 
 # blue = Turtle(shape="turtle" )
 # blue.color("Blue")
@@ -39,7 +41,7 @@ def draw_finishline():
     refree.forward(240)
 
 # def teleport_to_start():
-#     tim.teleport(-230, -100)
+#     new_turtle.teleport(-230, -100)
 #     blue.teleport(-230, -50)
 #     green.teleport(-230, 0)
 #     yellow.teleport(-230, 50)
@@ -57,7 +59,7 @@ def draw_finishline():
 
 #     speed = 1
 
-#     tim.speed(speed)
+#     new_turtle.speed(speed)
 #     blue.speed(speed)
 #     green.speed(speed)
 #     yellow.speed(speed)
@@ -73,7 +75,7 @@ def draw_finishline():
 
         
 
-#         tim.forward(a)
+#         new_turtle.forward(a)
 #         blue.forward(b)
 #         green.forward(c)
 #         yellow.forward(d)
@@ -82,21 +84,28 @@ def draw_finishline():
         
 
 
-
-
-
-
-
 for i in range(0 , 5) :
-
     
-    tim = Turtle(shape="turtle")
-    tim.color(colors[i])
-    tim.teleport(-230, y)
+    new_turtle = Turtle(shape="turtle")
+    new_turtle.color(colors[i])
+    new_turtle.teleport(-230, y)
     y += 50
 
+    all_turtles.append(new_turtle)
 
 draw_finishline ()
+
+user_bet = screen.textinput(title="Make Yor Bet", prompt="witch turtle will win the race ? Enter a color :")
+
+if user_bet:
+
+    is_race_on = True
+
+while is_race_on :
+
+    for turtle in all_turtles :
+        random_distance =  random.randint(0 , 10)
+        turtle.forward(random_distance)
 
 
 screen.exitonclick()
