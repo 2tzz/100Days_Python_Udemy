@@ -23,3 +23,4 @@
 - [Day 16:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day16) Object Oriented Programming (OOP)
 - [Day 17:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day17) The Quiz Project & The Benefits of OOP
 - [Day 18:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day18) Turtle & The Graphical User Interface (GUI)
+- [Day 19:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day19) Instances, State & Higher Order Functions
