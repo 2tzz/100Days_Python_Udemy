@@ -24,3 +24,10 @@
 - [Day 17:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day17) The Quiz Project & The Benefits of OOP
 - [Day 18:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day18) Turtle & The Graphical User Interface (GUI)
 - [Day 19:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day19) Instances, State & Higher Order Functions
+- [Day 20:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day20) Build the Snake Game Part 1: Animation & Coordinates
+- [Day 21:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day21) Build the Snake Game Part 2: Inheritance & List Slicing
+- [Day 22:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day22) Build Pong: The Famous Arcade Game
+- [Day 23:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day23) The Turtle Crossing Capstone Project
+- [Day 24:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day24) Files, Directories and Paths
+- [Day 25:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day25) Working with CSV Data and the Pandas Library
+- [Day 26:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day26) List Comprehension and the NATO Alphabet
