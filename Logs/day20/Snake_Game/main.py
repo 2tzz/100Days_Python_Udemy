@@ -14,6 +14,9 @@ screen.tracer(0)
 snake = Snake()
 food = Food ()
 scoreboard = ScoreBoard ()
+scoreboard2 = ScoreBoard ()
+
+scoreboard2.draw_boundry()
 
 screen.listen()
 screen.onkey(snake.up , "Up")
@@ -33,6 +36,10 @@ while game_is_on :
     if snake.head.distance(food) < 15 :
         food.refresh()
         scoreboard.show_score()
+
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 265 or snake.head.ycor() < -280 :
+        game_is_on = False
+        scoreboard.game_over()
 
 
 
