@@ -1,4 +1,5 @@
 from turtle import Turtle
+import random
 
 class Ball(Turtle) :
     
@@ -9,13 +10,30 @@ class Ball(Turtle) :
         self.color("white")
         self.shapesize(1 , 1)
         self.penup()
+        self.setheading(45)
 
 
     def move(self):
-        new_x = self.xcor()+1
-        new_y = self.ycor()+1
-        self.goto(new_x ,new_y)
+        
+        self.forward(1)
 
-    # def ball_collution (self , x , y):
+    def ball_collision (self):
+
+        self.color(self.random_color())  # Set the color using normalized RGB values
+        self.setheading(self.heading() + 90)
+
+
+    def ball_reset (self):
+        self.teleport(0,0)
+        self.setheading(self.heading() + random.randint(165 , 200))
+
+    def random_color(self):
+        r = random.randint(0, 255) / 255.0  # Normalize RGB values to [0, 1]
+        g = random.randint(0, 255) / 255.0
+        b = random.randint(0, 255) / 255.0
+        color_tuple = (r, g, b)  # Return normalized RGB tuple
+        return color_tuple
+
+        
 
 
