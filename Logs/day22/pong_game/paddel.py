@@ -6,10 +6,17 @@ class Paddel(Turtle) :
         super().__init__()
 
         self.shape("square")
-        self.shapesize(5 , 1)
+        self.shapesize(1 , 5)
+        self.left(90)
         self.color("White")
 
     def go_to (self):
 
         self.penup()
-        self.goto(383 , 0)
+        self.teleport(383 , 0)
+
+    def go_up (self):
+        self.forward(20)
+    
+    def go_down (self):
+        self.backward(20)
