@@ -10,13 +10,14 @@ class Paddel(Turtle) :
         self.left(90)
         self.color("White")
 
-    def go_to (self):
-
+    def go_to (self , x , y):
         self.penup()
-        self.teleport(383 , 0)
+        self.teleport(x , y)
 
     def go_up (self):
-        self.forward(20)
+        new_y = self.ycor() + 20
+        self.goto(self.xcor() , new_y)
     
     def go_down (self):
-        self.backward(20)
+        new_y = self.ycor() - 20
+        self.goto(self.xcor() , new_y)
