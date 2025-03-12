@@ -1,7 +1,7 @@
 # Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing
 ## Snake Game Part 2
 
-![](snake_game2.gif)
+![](snake22.gif)
 
 ## Exercises
 ### Detect Collision with Food 
