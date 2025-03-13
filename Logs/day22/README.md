@@ -1,7 +1,7 @@
 # Day 22 - Build Pong: The Famous Arcade Game
 ## Pong
 
-![](pongame.gif)
+![](Logs/day22/pongame.gif)
 
 ## Exercises
 ### Setup the Main Screen
