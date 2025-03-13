@@ -23,9 +23,16 @@ while game_is_on:
 
     time.sleep(0.1)
     for i in range(0,10) :
+            if carmanager.cars[i].distance(player) < 30 :
+                 game_is_on = False
+                 
             if carmanager.cars[i].xcor() < -280 :
                 carmanager.cars[i].goto(random.randint(280 , 500) , random.randint(-280,280) )
             carmanager.cars[i].forward(10)
+
     screen.update()
+
+
+screen.exitonclick()
     
     
