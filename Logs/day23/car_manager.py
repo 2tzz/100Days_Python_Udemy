@@ -17,7 +17,7 @@ class CarManager:
         
 
     def create_cars (self):
-        for car in range(0,10) :
+        for car in range(0,20) :
             self.add_car((random.randint(280 , 500) , random.randint(-280,280)))
 
   
