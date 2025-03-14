@@ -12,6 +12,7 @@ score = 0
 
 carmanager = CarManager()
 player = Player()
+scoreboard =  Scoreboard ()
 
 
 screen.listen()
@@ -34,7 +35,9 @@ while game_is_on:
 
     if player.is_at_finish() :
         player.reset_me()
-        carmanager.car_speed()
+        carmanager.level_up()
+        scoreboard.increse_level()
+        scoreboard.update_scoreboard()
     
 
 screen.exitonclick()
