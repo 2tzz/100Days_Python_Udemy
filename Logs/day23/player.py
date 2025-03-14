@@ -16,6 +16,8 @@ class Player(Turtle):
         self.penup()
         self.goto(STARTING_POSITION)
 
+#day 14
+
 
     def go(self) :
         self.forward(10)
