@@ -6,6 +6,7 @@ from scoreboard import Scoreboard
 import random
 
 screen = Screen()
+screen.bgcolor("grey")
 screen.setup(width=600, height=600)
 screen.tracer(0)
 score = 0
@@ -21,9 +22,10 @@ screen.onkey(player.go , "Up" )
 game_is_on = True
 
 while game_is_on:
-
+    
     time.sleep(0.1)
     screen.update()
+    scoreboard.update_scoreboard()
 
     carmanager.add_car()
     carmanager.car_fd()
