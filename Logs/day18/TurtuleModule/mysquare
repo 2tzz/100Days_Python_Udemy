@@ -14,5 +14,4 @@ for i in range (300):
     turtle.forward(i * 4)
     turtle.right(91)
 
-
 screen.exitonclick()
