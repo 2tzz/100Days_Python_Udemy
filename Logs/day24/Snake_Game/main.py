@@ -3,6 +3,7 @@ from food import Food
 from snake import Snake
 from scoreboard import ScoreBoard
 import time
+import random
 
 
 screen = Screen ()
@@ -26,7 +27,10 @@ screen.onkey(snake.right ,"Right")
 
 game_is_on = True
 
+snake.create_snake()
+
 while game_is_on :
+    scoreboard.show_score()
     screen.update()
     time.sleep(0.1)
     snake.move()
@@ -35,18 +39,21 @@ while game_is_on :
 
     if snake.head.distance(food) < 15 :
         food.refresh()
-        scoreboard.show_score()
+        scoreboard.increse_score()
         snake.extend()
 
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 265 or snake.head.ycor() < -280 :
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
+        
+        
 
     for segment in snake.segments[1:]:
     
         if snake.head.distance(segment) < 8:
-            game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
+            
 
 
     
