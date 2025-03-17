@@ -1,4 +1,10 @@
+import os
 
-with open("my_file.txt" , mode = "a") as file :
-    file.write("\n new text2")
+path = r"..\..\..\my_file.txt"
+
+with open(path , mode = "r") as file :
+    reads = file.read()
+
+    print (reads)
+
 
