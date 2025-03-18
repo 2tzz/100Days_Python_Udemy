@@ -24,8 +24,20 @@
 #         x = row[1]
 #         temperatures.append(x)
 
+
 # del temperatures[0]
 
 # print(temperatures)
         
 import pandas
+
+data = pandas.read_csv("weather_data.csv")
+
+temp_list = data["temp"].to_list()
+
+# print(data["temp"].mean())
+# print(data["temp"].max())
+
+# print(data.temp)
+
+print(data[data.temp == data.temp.max()])
