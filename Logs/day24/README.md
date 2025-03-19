@@ -85,11 +85,5 @@ python mail_merge.py
 ## 👨‍💻 Author
 - **Thiyura**
 
-📧 Contact: [Your Email or Social Link]  
-🌍 GitHub: [Your GitHub Profile]
 
-### 🌟 Show Some Love
-If you like this project, please ⭐ the repository to support future updates!
-
-![Star Button](https://img.shields.io/github/stars/yourusername/your-repo-name?style=social)
 
