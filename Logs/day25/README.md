@@ -1,5 +1,7 @@
 # 🌍 Day 25 - U.S. States Game
 
+![](states.gif)
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/2tzz/100Days_Python_Udemy)
 ![GitHub last commit](https://img.shields.io/github/last-commit/2tzz/100Days_Python_Udemy)
 
