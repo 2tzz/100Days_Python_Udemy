@@ -1,8 +1,7 @@
 # 🐍 Snake Game & ✉️ Mail Merge Project
 
-![GitHub repo size](https://img.shields.io/github/repo-size/thiyurathilakshana/day24)
-![GitHub contributors](https://img.shields.io/github/contributors/thiyurathilakshana/day24)
-![GitHub last commit](https://img.shields.io/github/last-commit/thiyurathilakshana/day24)
+![GitHub repo size](https://img.shields.io/github/repo-size/2tzz/100Days_Python_Udemy)
+![GitHub last commit](https://img.shields.io/github/last-commit/2tzz/100Days_Python_Udemy)
 
 ---
 
