@@ -18,6 +18,7 @@ A classic Snake Game built using Python and the `turtle` module. The player cont
 ✅ The snake grows when it eats food  
 ✅ Score tracking with high score persistence  
 ✅ Game resets upon collision with the wall or itself  
+✅ Added a highscore system using a text file 
 
 ### 📂 Files Structure
 ```
