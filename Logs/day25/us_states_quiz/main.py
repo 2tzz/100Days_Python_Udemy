@@ -30,14 +30,10 @@ while i < 50 :
     user_guess = screen.textinput(title=f"Make Yor Guess    {i}/50 correct ", prompt="What are the states in U.S. ? :").title()
 
     if user_guess == "Exit" :
-        missing_states = []
 
-        for state in states :
-            if state not in guessed_states:
-                missing_states.append(state)
-
-                new_data = pandas.DataFrame(missing_states)
-                new_data.to_csv("states_to_learn.csv")
+        missing_states = [state for state in states if state not in guessed_states]
+        new_data = pandas.DataFrame(missing_states)
+        new_data.to_csv("states_to_learn.csv")
         break
 
     for state in states :
