@@ -1,8 +1,8 @@
 # 🐍 Snake Game & ✉️ Mail Merge Project
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/your-repo-name)
-![GitHub contributors](https://img.shields.io/github/contributors/yourusername/your-repo-name)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/your-repo-name)
+![GitHub repo size](https://img.shields.io/github/repo-size/thiyurathilakshana/day24)
+![GitHub contributors](https://img.shields.io/github/contributors/thiyurathilakshana/day24)
+![GitHub last commit](https://img.shields.io/github/last-commit/thiyurathilakshana/day24)
 
 ---
 
