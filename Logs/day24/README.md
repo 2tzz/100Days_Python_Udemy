@@ -8,6 +8,8 @@
 
 ## 🎮 Snake Game
 
+![](snake2.gif)
+
 ### 📌 Description
 A classic Snake Game built using Python and the `turtle` module. The player controls a snake that grows in size when it eats food. The goal is to achieve the highest score without colliding with the walls or itself.
 
