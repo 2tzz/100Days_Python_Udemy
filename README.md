@@ -31,3 +31,36 @@
 - [Day 24:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day24) Files, Directories and Paths
 - [Day 25:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day25) Working with CSV Data and the Pandas Library
 - [Day 26:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day26) List Comprehension and the NATO Alphabet
+- [Day 27:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day27) Tkinter, *args, **kwargs and Creating GUI Programs
+- [Day 28:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day28) Tkinter, Dynamic Typing and the Pomodoro GUI Application
+- [Day 29:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day29) Building a Password Manager GUI App with Tkinter
+- [Day 30:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day30) Errors, Exceptions and JSON Data: Improving the Password Manager
+- [Day 31:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Flash Card App Capstone Project
+## 👨‍💻 Intermediate+
+- [Day 32:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Send Email (smtplib) & Manage Dates (datetime) - Automated Birthday Wisher
+- [Day 33:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) API Endpoints & API Parameters - ISS Overhead Notifier
+- [Day 34:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) API Practice - Creating a GUI Quiz App
+- [Day 35:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Keys, Authentication & Environment Variables - Telegram Rain Notifier
+- [Day 36:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Stock Trading News Alert Project
+- [Day 37:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Habit Tracking Project: API Post Requests & Headers
+- [Day 38:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Workout Tracking Using Google Sheets
+- [Day 39:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 1: Flight Deal Finder
+- [Day 40:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 2: Flight Club
+- [Day 41:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to HTML
+- [Day 42:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Intermediate HTML
+- [Day 43:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to CSS
+- [Day 44:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Intermediate CSS
+- [Day 45:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Scraping with Beautiful Soup
+- [Day 46:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Create a Spotify Playlist Using The Musical Time Machine
+- [Day 47:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Create an Automated Amazon Price Tracker
+- [Day 48:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Selenium Webdriver Browser and Game Playing Bot
+- [Day 49:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Automating Job Applications on LinkedIn
+- [Day 50:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Auto Tinder Swiping Bot
+- [Day 51:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Internet Speed Twitter Complaint Bot
+- [Day 52:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Instagram Follower Bot
+- [Day 53:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Scraping Capstone - Data Entry Job Automation
+- [Day 54:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to Web Development with Flask
+- [Day 55:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) HTML & URL Parsing in Flask and the Higher Lower Game
+- [Day 56:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Rendering HTML/Static Files and Using Website Templates
+- [Day 57:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Templating with Jinja in Flask Applications
+- [Day 58:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Foundation Boostrap
