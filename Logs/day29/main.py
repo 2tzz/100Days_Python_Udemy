@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import math
 from random import choice , randint , shuffle
+import pyperclip
 
 
 PINK = "#e2979c"
@@ -37,7 +38,8 @@ def gen_password():
     for char in password_list:
         password += char
         password
-    
+        
+    pyperclip.copy(password)
     password_entry.insert(0 , password)
         
 
