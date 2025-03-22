@@ -8,9 +8,11 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
+WORK_MIN = 10
 SHORT_BREAK_MIN = 5
-LONG_BREAK_MIN = 20 
+LONG_BREAK_MIN = 8
+reps= 0
+
 
 
 
@@ -27,12 +29,32 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer() :
-    countdown(5 * 60)
+    global reps
+    reps += 1
+
+    if reps % 8 == 0 :
+        countdown(LONG_BREAK_MIN *60 )
+        timer.config(text="Break" , fg=RED)
+        
+
+    elif reps % 2 == 0 :
+        
+        countdown(SHORT_BREAK_MIN *60 )
+        timer.config(text="Break" , fg=PINK)
+
+    else  :
+        countdown(WORK_MIN *60 )
+        timer.config(text="Work" , fg=YELLOW)
+       
+
+
+    
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 
 def countdown(count):
 
+    
     count_min = math.floor(count / 60)
     count_sec = count % 60
 
@@ -42,7 +64,10 @@ def countdown(count):
 
     canvas.itemconfig(timer_text , text=f"{count_min}:{count_sec}")
     if count > 0 :
-        window.after(1000, countdown ,count - 1)
+        window.after(10, countdown ,count - 1)
+
+    else:
+        start_timer()
 
 
 
@@ -50,12 +75,12 @@ def countdown(count):
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
-window.title("Pomadoro")
+window.title("podoro")
 window.config(padx=100, pady=100 , bg=GREEN)
 
 
 
-timer = Label(text="Timer" , bg=GREEN ,  fg=YELLOW , font=(FONT_NAME,50,"bold"))
+timer = Label(text="Timer", bg=GREEN ,  fg=YELLOW , font=(FONT_NAME,50,"bold"))
 timer.grid(column=1 , row=0)
 
 
