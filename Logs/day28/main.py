@@ -12,6 +12,7 @@ WORK_MIN = 10
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 8
 reps= 0
+timers = None
 
 
 
@@ -19,6 +20,14 @@ reps= 0
 
 
 # ---------------------------- TIMER RESET ------------------------------- # 
+def reset_temer () :
+    global reps
+    reps = 0
+    window.after_cancel(timers)
+    tick.config(text='')
+    timer.config(text='Timer', fg=YELLOW)
+    canvas.itemconfig(timer_text , text="00:00")
+    
 
 
 
@@ -31,6 +40,8 @@ reps= 0
 def start_timer() :
     global reps
     reps += 1
+    
+
 
     if reps % 8 == 0 :
         countdown(LONG_BREAK_MIN *60 )
@@ -43,8 +54,12 @@ def start_timer() :
         timer.config(text="Break" , fg=PINK)
 
     else  :
+        
         countdown(WORK_MIN *60 )
         timer.config(text="Work" , fg=YELLOW)
+
+
+        
        
 
 
@@ -53,7 +68,7 @@ def start_timer() :
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 
 def countdown(count):
-
+    global timers
     
     count_min = math.floor(count / 60)
     count_sec = count % 60
@@ -64,10 +79,16 @@ def countdown(count):
 
     canvas.itemconfig(timer_text , text=f"{count_min}:{count_sec}")
     if count > 0 :
-        window.after(10, countdown ,count - 1)
+        timers = window.after(10, countdown ,count - 1)
 
     else:
         start_timer()
+        marks = ''
+        work_sessitions = math.floor(reps/2)
+        for _ in range(work_sessitions):
+            marks += "✔"
+        tick.config(text=marks)
+
 
 
 
@@ -95,10 +116,10 @@ canvas.grid(column=1 , row=1 )
 start_button = Button(text="Sart",font=(FONT_NAME,10,"bold") ,width=8, height=1, background=YELLOW ,border=OFF, command=start_timer )
 start_button.grid(column=0 , row=2)
 
-reset_button = Button(text="Reset",font=(FONT_NAME,10,"bold") ,width=8, height=1 ,bg=YELLOW ,border=OFF, command=start_timer)
+reset_button = Button(text="Reset",font=(FONT_NAME,10,"bold") ,width=8, height=1 ,bg=YELLOW ,border=OFF, command=reset_temer)
 reset_button.grid(column=2 , row=2)
 
-tick = Label(text="✔" , bg=GREEN ,  fg=YELLOW , font=(FONT_NAME,20,"bold"))
+tick = Label(text= ''  , bg=GREEN ,  fg=YELLOW , font=(FONT_NAME,20,"bold"))
 tick.grid(column=1 , row=3)
 
 
