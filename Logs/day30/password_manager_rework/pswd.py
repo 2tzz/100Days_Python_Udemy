@@ -19,33 +19,30 @@ FONT_NAME = "Hobo Std"
 
 def search_web():
 
-    website = web_entry_getx.get()
-     
-    with open("passwords.jason" , mode = "r") as file:
-         #reading old data
-        data = json.load(file)
-
-    for dic in data :
-        if website == dic :
-            returnemail = data[dic]["email"]
-            returnpassword = data[dic]["password"]
-
-    email_entry.delete(0,'end')   
-    password_entry.delete(0,'end') 
-    password_entry.insert(0 , returnpassword)
-    email_entry.insert(0 , returnemail)
-
-         
-                
-   
-                
+    try:
+        website = web_entry_getx.get()
         
+        with open("passwords.jason" , mode = "r") as file:
+            #reading old data
+            data = json.load(file)
 
-   
+        for dic in data :
+            if website == dic :
+                returnemail = data[dic]["email"]
+                returnpassword = data[dic]["password"]
+
+            email_entry.delete(0,'end')   
+            password_entry.delete(0,'end') 
+            password_entry.insert(0 , returnpassword)
+            email_entry.insert(0 , returnemail)
 
 
+    except :
 
-
+        messagebox.showinfo(title='oops', message=f'there is no website named {website} in saved websites')
+  
+        
+         
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
