@@ -37,6 +37,7 @@ word_dic = dict(zip(letters , codes))
 while list_is_true :
 
     user_input = input("Enter your word :").upper()
+    input_letter_list = list(user_input)
 
     if user_input == 'EXIT':
         list_is_true = False
@@ -44,7 +45,7 @@ while list_is_true :
     
     else:
         try :
-            input_letter_list = list(user_input)
+            
             output_list = [word_dic[lt] for lt in input_letter_list ]
         
 
