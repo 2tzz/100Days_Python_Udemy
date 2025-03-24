@@ -20,21 +20,20 @@ FONT_NAME = "Hobo Std"
 def search_web():
 
     website = web_entry_getx.get()
-    email = email_entry_getx.get()
-    password_ = password_entry_getx.get()
-
-    new_data = {
-        website : {
-            "email" : email,
-            "password" : password_,
-        }
-    }
-
- 
      
     with open("passwords.jason" , mode = "r") as file:
          #reading old data
         data = json.load(file)
+
+    for dic in data :
+        if website == dic :
+            returnemail = data[dic]["email"]
+            returnpassword = data[dic]["password"]
+
+    email_entry.delete(0,'end')   
+    password_entry.delete(0,'end') 
+    password_entry.insert(0 , returnpassword)
+    email_entry.insert(0 , returnemail)
 
          
                 
@@ -146,7 +145,7 @@ web_entry = Entry(width=31 , border=1 , background='#e6f3ff' , textvariable=web_
 web_entry.focus()
 web_entry.grid(column=1 , row=1 ,columnspan=1 ,pady=1)
 
-search_button = Button(text="search",font=(FONT_NAME,8,"bold"), height=1 ,width=16 , command=gen_password , bg='#d1eaff' ,borderwidth=1 )
+search_button = Button(text="search",font=(FONT_NAME,8,"bold"), height=1 ,width=16 , command=search_web , bg='#d1eaff' ,borderwidth=1 )
 search_button.grid(column=2 , row=1 ,pady=1 , padx=3)
 
 email = Label(text="Email / User_Name :",  font=(FONT_NAME,8,"bold"))
