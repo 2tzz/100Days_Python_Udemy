@@ -12,20 +12,20 @@ to_learn =  data.to_dict(orient='records')
 
 def create_flashcard() :
 
-    global current_card
-    
+    global current_card , flip_timer
+    window.after_cancel(flip_timer)
     current_card = random.choice(to_learn)
-
-    print(current_card)
-
-    canvas.itemconfig(title_text , text="French")
-    canvas.itemconfig(word_text , text=current_card["French"])
+    canvas.itemconfig(title_text , text="French" , fill="Black")
+    canvas.itemconfig(word_text , text=current_card["French"] , fill="Black")
+    canvas.itemconfig(card_background , image=card_front_image)
+    flip_timer = window.after(3000 , flip_card )
 
 
 def flip_card() :
 
-    canvas.itemconfig(title_text, text="Englsih")
-    canvas.itemconfig(word_text, text=current_card["English"]) 
+    canvas.itemconfig(title_text, text="Englsih",fill="white" )
+    canvas.itemconfig(word_text, text=current_card["English"] ,fill="white") 
+    canvas.itemconfig(card_background, image=card_back_image)
 
 
     green_background = PhotoImage(file=r"images\card_back.png")
@@ -44,14 +44,17 @@ window.title("flashy")
 window.config(padx=20, pady=20 , bg=BACKGROUND_COLOR)
 
 
-window.after(3000, func=flip_card)
+flip_timer = window.after(3000, func=flip_card)
 
 
 canvas = Canvas(width=800 , height= 550 , bg=BACKGROUND_COLOR, highlightthickness=0  )
 
 
-white_background = PhotoImage(file=r"images\card_front.png")
-canvas.create_image(400, 270 , image=white_background )
+card_front_image = PhotoImage(file=r"images\card_front.png")
+
+card_back_image = PhotoImage(file=r"images\card_back.png")
+
+card_background = canvas.create_image(400, 270 , image=card_front_image )
 
 word_text = canvas.create_text(400 , 270 , text='Word' , fill="Black" , font=("Ariel",60,"bold"))
 
