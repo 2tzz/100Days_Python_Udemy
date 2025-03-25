@@ -1,7 +1,34 @@
 from tkinter import *
+from pandas  import *
 
 
 BACKGROUND_COLOR = "#B1DDC6"
+
+
+
+def create_flashcard() :
+
+    data = read_csv(r"data/french_words.csv") 
+
+    data_dic =  data.to_dict(orient='dict')
+
+    print(data_dic)
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -23,15 +50,15 @@ title_text = canvas.create_text(400 , 155 , text='Title' , fill="Black" , font=(
 canvas.grid(column=0 , row=0, columnspan=2 ,padx=50 , pady=50 ) 
 
 wrong_image = PhotoImage(file=r"images\wrong.png")
-wrong_button = Button(image=wrong_image, highlightthickness=0 , border=0)
+wrong_button = Button(image=wrong_image, highlightthickness=1 , border=0  )
 wrong_button.grid(column=0,row=1)
 
 
 correct_image = PhotoImage(file=r"images\right.png")
-correct_button = Button(image=correct_image, highlightthickness=0 , border=0)
+correct_button = Button(image=correct_image, highlightthickness=1 , border=0)
 correct_button.grid(column=1,row=1)
 
-
+create_flashcard()
 
 
 
