@@ -31,7 +31,7 @@ def search_web():
                 returnemail = data[dic]["email"]
                 returnpassword = data[dic]["password"]
 
-            email_entry.delete(0,'end')   
+            web_entry.delete(0,'end')
             password_entry.delete(0,'end') 
             password_entry.insert(0 , returnpassword)
             email_entry.insert(0 , returnemail)
