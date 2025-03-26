@@ -26,6 +26,6 @@ if day == 2 :
         connection.login(user=my_email ,password=passkey)
         connection.sendmail(
             from_addr=my_email, 
-            to_addrs="tooteefernando@gmail.com",
-            msg=f"Subject:Hello\n\n.{random.choice(quotes)}")
+            to_addrs="tthiyura@gmail.com.com",
+            msg=f"Subject:monday motivation\n\n.{random.choice(quotes)}")
 
