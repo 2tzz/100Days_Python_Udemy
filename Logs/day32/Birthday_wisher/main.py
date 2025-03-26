@@ -16,7 +16,7 @@ with open ("Birthday_wisher/quotes.txt") as quotes_file :
 now = dt.datetime.now()
 year = now.year
 month = now.month
-day = now.date()
+day = now.weekday()
 
 
 if day == 2 :
