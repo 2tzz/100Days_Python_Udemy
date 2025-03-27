@@ -29,7 +29,7 @@ def is_night() :
     data = response.json()
     sunrise = int(data["results"]["sunrise"].split("T")[1].split(":")[0])
     sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
-    time_now = datetime.now().hour
+    time_now = datetime.now(timezone.utc).hour
 
     print(sunrise)
     print(sunset)
