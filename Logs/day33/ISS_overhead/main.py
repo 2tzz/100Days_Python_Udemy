@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime , timezone
 
+
 MY_LAT = 6.753509
 MY_LONG = 80.166114
 
@@ -17,6 +18,8 @@ def is_iss_overhead() :
         return True
         
 
+
+#checking is it night to my location
 def is_night() :
     parameters = {
         "lat": MY_LAT,
