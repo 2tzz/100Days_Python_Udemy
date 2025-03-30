@@ -55,6 +55,8 @@ if len(birthday_names) != 0 :
                     to_addrs=f"{email}",
                     msg=f"Subject:Hey! Its your Birthday!\n\n{new_letter}")
 
+                    #hellow
+
 birthday_names.clear()
 birthday_emails.clear()
     
