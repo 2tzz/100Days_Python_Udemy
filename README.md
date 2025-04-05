@@ -42,7 +42,7 @@
 - [Day 34:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day34) API Practice - Creating a GUI Quiz App
 - [Day 35:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day35) Keys, Authentication & Environment Variables - Telegram Rain Notifier
 - [Day 36:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day36) Stock Trading News Alert Project
-- [Day 37:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Habit Tracking Project: API Post Requests & Headers
+- [Day 37:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day37) Habit Tracking Project: API Post Requests & Headers
 - [Day 38:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Workout Tracking Using Google Sheets
 - [Day 39:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 1: Flight Deal Finder
 - [Day 40:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 2: Flight Club
