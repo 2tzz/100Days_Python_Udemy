@@ -87,7 +87,6 @@ dbyest_close = float(trade_list[1]["4. close"])
 
 # 4test
 # yest_close = 390.0000
-
 # dbyest_close = 360.0000
 
 
