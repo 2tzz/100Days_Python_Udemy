@@ -5,7 +5,8 @@ USER_NAME = "thiyura"
 TOKEN = "tT47tt74TT77tt44"
 pixela_endpoint = "https://pixe.la/v1/users"
 graph_endpoint = f"{pixela_endpoint}/{USER_NAME}/graphs/graph001"
-date = 20250407
+pixel_creation_endpoint = f"{pixela_endpoint}/{USER_NAME}/graphs"
+date = "20250407"
 
 user_params = {
     "token" : TOKEN,
@@ -23,7 +24,7 @@ graph_config = {
 
 pixel_config = {
     "date" : date,
-    "quantity" : 1
+    "quantity" : "8"
 
 }
 
@@ -31,6 +32,6 @@ headders = {
     "X-USER-TOKEN" : TOKEN
 }
 
-response = requests.post(url=pixel_config, json=graph_config , headers=headders)
+response = requests.post(url=graph_endpoint, json=pixel_config , headers=headders)
 
 print(response.text)
