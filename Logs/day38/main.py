@@ -21,10 +21,10 @@ exercise_params = {
 
 
 response = requests.post(natural_exercise_endpoint , headers=header ,json=exercise_params)
+response.raise_for_status()
+calorie_data = response.json()
 
-print(response.text)
-
-
+print(calorie_data)
 
 
 # url = 'https://trackapi.nutritionix.com/v2/natural/exercise'
