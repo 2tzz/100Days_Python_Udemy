@@ -55,7 +55,7 @@ header_sheety = {
     "Authorization": "Bearer TTtt47"
 }
 
-response_sheety = requests.post(sheety_endpoint ,json=sheet_params)
+response_sheety = requests.post(sheety_endpoint ,json=sheet_params , headers=header_sheety)
 response_sheety.raise_for_status()
 
 
