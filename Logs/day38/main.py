@@ -5,10 +5,10 @@ today = str(datetime.now())
 
 date_list = today.split(" ")
 
-date = datetime(year=2025 , month=4 , day=6)
+date = date_list[0]
 time = date_list[1].split(".")[0]
 
-print(datetime.year())
+print(date)
 
 natural_exercise_endpoint =  "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/4b62b0bf9f98c5e6082ff771ece0e18c/myWorkouts/workouts"
@@ -43,7 +43,7 @@ calories = calorie_dict["nf_calories"]
 
 sheet_params = {
     "workout" : {
-        "sate" : date.strftime("%d/%m/%Y"),
+        "date" : date,
         "time" : time,
         "exercise" : exercise,
         "duration" : duration,
