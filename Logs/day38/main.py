@@ -5,9 +5,10 @@ today = str(datetime.now())
 
 date_list = today.split(" ")
 
-date = date_list[0]
+date = datetime(year=2025 , month=4 , day=6)
 time = date_list[1].split(".")[0]
 
+print(datetime.year())
 
 natural_exercise_endpoint =  "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/4b62b0bf9f98c5e6082ff771ece0e18c/myWorkouts/workouts"
@@ -41,18 +42,20 @@ calories = calorie_dict["nf_calories"]
 
 
 sheet_params = {
-    "Date" : date,
-    "Time" : time,
-    "Exercise" : exercise,
-    "Duration" : duration,
-    "Calories" : calories
+    "workout" : {
+        "sate" : date.strftime("%d/%m/%Y"),
+        "time" : time,
+        "exercise" : exercise,
+        "duration" : duration,
+        "calories" : calories,
+        }
 }
 
 header_sheety = {
     "Authorization": "Bearer TTtt47"
 }
 
-response_sheety = requests.post(sheety_endpoint , headers=header_sheety ,json=sheet_params)
+response_sheety = requests.post(sheety_endpoint ,json=sheet_params)
 response_sheety.raise_for_status()
 
 
