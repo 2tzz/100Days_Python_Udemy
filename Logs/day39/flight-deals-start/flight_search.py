@@ -14,6 +14,7 @@ class FlightSearch:
         self._api_key = api_key
         self._api_secret = api_seacret
         self._token = self._get_new_token()
+        
     
     def _get_new_token(self) :
 
@@ -31,6 +32,22 @@ class FlightSearch:
 
         response = requests.post(url=api_endpoint_flight , headers=headers_params ,data=body_params )
         data = response.json()
-        pprint(data)
         new_token = data["access_token"]
         return new_token
+    
+    def _get_iata(self , city):
+        token =  self._get_new_token()
+        api_endpoint_city = "https://test.api.amadeus.com/v1/reference-data/locations/cities"
+
+        headerx = {
+            "Authorization": f"Bearer {token}"
+            }
+
+        city_params =  {
+            "keyword" : city,
+            "max" : 1
+            }
+        response_city = requests.get(url=api_endpoint_city , headers=headerx , params=city_params)
+        data_city = response_city.json()
+        iata_code = data_city["data"][0]["iataCode"]
+        print(iata_code)

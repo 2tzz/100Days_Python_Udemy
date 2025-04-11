@@ -10,4 +10,7 @@ fs = FlightSearch()
 
 # dt.put_iata("thiyura")
 
-print(fs._token)
+fs._get_iata("COLOMBO")
+
+
+
