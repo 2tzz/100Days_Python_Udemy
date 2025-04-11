@@ -15,7 +15,19 @@ class DataManager:
         flight_data = response_sheety.json()
         return flight_data
 
-
+    def put_iata(self , string):
+        data = self.get_data()
+        items = data["prices"]
+        for row in items :
+            row_id = row["id"]
+            update_url = f"{self.sheety_endpoint}/{row_id}"
+            body = {
+                "price": {
+                    "iataCode": string
+                    }
+                }
+            update_response = requests.put(update_url, json=body, headers=self.header_sheety)
+            update_response.raise_for_status()
 
 
 

@@ -5,4 +5,5 @@ from pprint import pprint
 dt  = DataManager()
 
 flight_data = dt.get_data()
-pprint(flight_data["prices"])
+
+dt.put_iata("Testing")
