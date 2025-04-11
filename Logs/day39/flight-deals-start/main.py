@@ -6,4 +6,4 @@ dt  = DataManager()
 
 flight_data = dt.get_data()
 
-dt.put_iata("Testing")
+dt.put_iata("hibb")

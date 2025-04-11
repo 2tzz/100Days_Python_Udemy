@@ -1,11 +1,16 @@
 import requests
 from pprint import pprint
+from dotenv import load_dotenv
+import os
+
+load_dotenv() 
+api_key = os.getenv("SHEETY_API_KEY")
 
 class DataManager:
     def __init__(self):
         self.sheety_endpoint = "https://api.sheety.co/4b62b0bf9f98c5e6082ff771ece0e18c/flightDeals/prices"
         self.header_sheety = {
-            "Authorization": "Bearer flightTt47"
+            "Authorization": api_key
         }
     
 
@@ -26,9 +31,11 @@ class DataManager:
                     "iataCode": string
                     }
                 }
+            
             update_response = requests.put(update_url, json=body, headers=self.header_sheety)
             update_response.raise_for_status()
 
+   
 
 
 
