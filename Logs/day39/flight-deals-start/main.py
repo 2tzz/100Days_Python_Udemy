@@ -8,9 +8,9 @@ fs = FlightSearch()
 
 # flight_data = dt.get_data()
 
-# dt.put_iata("thiyura")
+dt.put_iata("thiyura")
 
-fs._get_iata("COLOMBO")
+# fs._get_iata("COLOMBO")
 
 
 

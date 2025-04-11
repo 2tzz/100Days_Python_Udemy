@@ -31,6 +31,7 @@ class FlightSearch:
         }
 
         response = requests.post(url=api_endpoint_flight , headers=headers_params ,data=body_params )
+        response.raise_for_status()
         data = response.json()
         new_token = data["access_token"]
         return new_token
@@ -48,6 +49,7 @@ class FlightSearch:
             "max" : 1
             }
         response_city = requests.get(url=api_endpoint_city , headers=headerx , params=city_params)
+        response_city.raise_for_status()
         data_city = response_city.json()
         iata_code = data_city["data"][0]["iataCode"]
         print(iata_code)

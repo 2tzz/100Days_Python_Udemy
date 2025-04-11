@@ -23,8 +23,11 @@ class DataManager:
     def put_iata(self , string):
         data = self.get_data()
         items = data["prices"]
+
+       
         for row in items :
             row_id = row["id"]
+            city = row["city"]
             update_url = f"{self.sheety_endpoint}/{row_id}"
             body = {
                 "price": {
