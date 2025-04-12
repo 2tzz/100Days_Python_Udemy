@@ -6,7 +6,7 @@ from flight_data import FlightData , data
 
 dt  = DataManager()
 fs = FlightSearch()
-fd = FlightData("CMB")
+fd = FlightData("LON")
 
 flight_sheet_data = dt.get_data()
 # print(flight_data)
