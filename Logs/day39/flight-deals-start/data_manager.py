@@ -2,9 +2,12 @@ import requests
 from pprint import pprint
 from dotenv import load_dotenv
 import os
+from flight_search import FlightSearch
 
 load_dotenv() 
 api_key = os.getenv("SHEETY_API_KEY")
+
+ft = FlightSearch()
 
 class DataManager:
     def __init__(self):
@@ -20,7 +23,7 @@ class DataManager:
         flight_data = response_sheety.json()
         return flight_data
 
-    def put_iata(self , string):
+    def put_iata(self):
         data = self.get_data()
         items = data["prices"]
 
@@ -31,7 +34,7 @@ class DataManager:
             update_url = f"{self.sheety_endpoint}/{row_id}"
             body = {
                 "price": {
-                    "iataCode": string
+                    "iataCode": ft._get_iata(city)
                     }
                 }
             

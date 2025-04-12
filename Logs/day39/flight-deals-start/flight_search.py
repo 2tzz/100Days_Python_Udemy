@@ -44,6 +44,8 @@ class FlightSearch:
             "Authorization": f"Bearer {token}"
             }
 
+        print(token)
+        
         city_params =  {
             "keyword" : city,
             "max" : 1
@@ -52,4 +54,4 @@ class FlightSearch:
         response_city.raise_for_status()
         data_city = response_city.json()
         iata_code = data_city["data"][0]["iataCode"]
-        print(iata_code)
+        return iata_code

@@ -2,15 +2,20 @@
 from data_manager import DataManager
 from pprint import pprint
 from flight_search import FlightSearch
+from flight_data import FlightData , data
 
 dt  = DataManager()
 fs = FlightSearch()
+fd = FlightData("CMB")
 
-# flight_data = dt.get_data()
+flight_sheet_data = dt.get_data()
+# print(flight_data)
 
-dt.put_iata("thiyura")
+# dt.put_iata()
 
 # fs._get_iata("COLOMBO")
 
+flight_offers = fd.get_flight_offer(flight_sheet_data)
 
+print(flight_offers)
 
