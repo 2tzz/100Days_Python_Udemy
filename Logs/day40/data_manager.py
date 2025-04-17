@@ -1,13 +1,11 @@
 import os
+from pprint import pprint
 import requests
 from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/4b62b0bf9f98c5e6082ff771ece0e18c/flightDeals/prices"
-
 
 class DataManager:
 
@@ -47,8 +45,6 @@ class DataManager:
             )
             print(response.text)
 
-            
-            
     def get_customer_emails(self):
         response = requests.get(url=self.users_endpoint)
         data = response.json()
@@ -57,3 +53,4 @@ class DataManager:
         # Name of spreadsheet 'tab' with the customer emails should be "users".
         self.customer_data = data["users"]
         return self.customer_data
+
