@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Border Styles Showcase</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.2em;
+      border-width: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .solid   { border-style: solid;   border-color: #2c3e50; }
+    .dashed  { border-style: dashed;  border-color: #e74c3c; }
+    .dotted  { border-style: dotted;  border-color: #2980b9; }
+    .double  { border-style: double;  border-color: #27ae60; }
+    .groove  { border-style: groove;  border-color: #9b59b6; }
+    .ridge   { border-style: ridge;   border-color: #f39c12; }
+    .inset   { border-style: inset;   border-color: #16a085; }
+    .outset  { border-style: outset;  border-color: #8e44ad; }
+    .none    { border-style: none;    border-color: transparent; }
+
+    .label {
+      position: absolute;
+      top: -1.5em;
+      font-size: 0.9em;
+      font-weight: 500;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Border Styles Showcase</h1>
+
+  <div class="container">
+    <div class="box solid">Solid Border</div>
+    <div class="box dashed">Dashed Border</div>
+    <div class="box dotted">Dotted Border</div>
+    <div class="box double">Double Border</div>
+    <div class="box groove">Groove Border</div>
+    <div class="box ridge">Ridge Border</div>
+    <div class="box inset">Inset Border</div>
+    <div class="box outset">Outset Border</div>
+    <div class="box none">No Border</div>
+  </div>
+
+</body>
+</html>
