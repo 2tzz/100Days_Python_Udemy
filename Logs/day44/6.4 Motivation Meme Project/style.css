@@ -1,4 +1,4 @@
-*{
+/* *{
     background-color: black;
 }
 
@@ -12,6 +12,7 @@
 
 .imgme{
     margin-left: 50px;
+    
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
@@ -28,4 +29,69 @@ p{
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align:center;
-}
+} */
+
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Image styling */
+  #dane {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border: 5px solid white;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  
+  /* Paragraph wrapper */
+  .pr {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Paragraph text */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Optional: Responsive tweaks */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+    }
+  }
+  
