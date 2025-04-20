@@ -1,0 +1,31 @@
+*{
+    background-color: black;
+}
+
+#dane{
+    height: 300px;
+    width: 600px;
+    margin-left: 330px;
+    margin-top: 50px;
+    border: 5px solid white;
+}
+
+.imgme{
+    margin-left: 50px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+.pr{
+    width: 600px;
+    margin-left: 375px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align:center;
+}
