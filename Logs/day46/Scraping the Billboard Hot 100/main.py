@@ -34,7 +34,7 @@ print(f"Adding a playlist with 100 top songs related to date - {date}")
 # Date for Billboard chart
 # date = '2010-12-31'
 
-date = 
+
 URL_BILL = f"https://www.billboard.com/charts/hot-100/{date}/"
 header_bill = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"
