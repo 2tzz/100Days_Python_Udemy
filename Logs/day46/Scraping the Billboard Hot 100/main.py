@@ -1,6 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
 
+spotify_URL ="http://open.spotify.com/track/6rqhFgbbKwnb9MLmUQDhG6"
+spotifi_URI = "spotify:track:6rqhFgbbKwnb9MLmUQDhG6"
+spotify_ID = '6rqhFgbbKwnb9MLmUQDhG6' 
 
 date = '2002-01-05'
 
