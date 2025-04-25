@@ -24,9 +24,17 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 
 USER_ID = sp.current_user()['id']
 
+year = input("Enter year you want songs from :")
+month = input("Enter month  :")
+date = input("Enter date :")
 
+date = f'{year}-{month}-{date}'
+
+print(f"Adding a playlist with 100 top songs related to date - {date}")
 # Date for Billboard chart
-date = '2010-12-31'
+# date = '2010-12-31'
+
+date = 
 URL_BILL = f"https://www.billboard.com/charts/hot-100/{date}/"
 header_bill = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"
