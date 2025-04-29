@@ -43,16 +43,16 @@
 - [Day 35:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day35) Keys, Authentication & Environment Variables - Telegram Rain Notifier
 - [Day 36:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day36) Stock Trading News Alert Project
 - [Day 37:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day37) Habit Tracking Project: API Post Requests & Headers
-- [Day 38:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Workout Tracking Using Google Sheets
-- [Day 39:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 1: Flight Deal Finder
-- [Day 40:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Capstone Part 2: Flight Club
-- [Day 41:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to HTML
-- [Day 42:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Intermediate HTML
-- [Day 43:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to CSS
-- [Day 44:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Intermediate CSS
-- [Day 45:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Scraping with Beautiful Soup
-- [Day 46:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Create a Spotify Playlist Using The Musical Time Machine
-- [Day 47:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Create an Automated Amazon Price Tracker
+- [Day 38:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day38) Workout Tracking Using Google Sheets
+- [Day 39:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day39) Capstone Part 1: Flight Deal Finder
+- [Day 40:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day40) Capstone Part 2: Flight Club
+- [Day 41:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day41) Introduction to HTML
+- [Day 42:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day42) Intermediate HTML
+- [Day 43:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day43) Introduction to CSS
+- [Day 44:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day44) Intermediate CSS
+- [Day 45:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day45) Web Scraping with Beautiful Soup
+- [Day 46:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day46) Create a Spotify Playlist Using The Musical Time Machine
+- [Day 47:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day47) Create an Automated Amazon Price Tracker
 - [Day 48:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Selenium Webdriver Browser and Game Playing Bot
 - [Day 49:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Automating Job Applications on LinkedIn
 - [Day 50:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Auto Tinder Swiping Bot
