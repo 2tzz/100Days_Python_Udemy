@@ -1,7 +1,7 @@
 
 ---
 
-# Day 47 – Amazon Price Tracker
+# Day 47 – Amazon Price Tracker 🛒
 
 This project is part of Day 47 from the *100 Days of Code: Python Bootcamp*.  
 The goal is to **track the price** of a product on Amazon and send an **email alert** when it drops below a set target.
