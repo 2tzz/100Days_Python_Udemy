@@ -3,10 +3,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
+import time , os
+from dotenv import load_dotenv
+
+load_dotenv
+
+MY_EMAIL = os.getenv("EMAIL")
+MY_PASSWORD = os.getenv("PASSWORD")
+MY_USERNAME = os.getenv("USERNAME")
 
 
-speed = '12'
 
 # Setup
 chrome_options = webdriver.ChromeOptions()
@@ -41,19 +47,19 @@ wait = WebDriverWait(driver, 15)
 
 # Step 1: Enter email
 email_input = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[4]/label/div/div[2]/div/input")))
-email_input.send_keys("thilakshana.100daysofcode@gmail.com")
+email_input.send_keys(MY_EMAIL)
 
 next_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/button[2]')))
 next_button.click()
 
 username_input = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input')))
-username_input.send_keys("speedcheck1234")
+username_input.send_keys(MY_USERNAME)
 
 next_button2 = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div/button/div')))
 next_button2.click()
 # Step 3: Enter password
 password_input = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input')))
-password_input.send_keys("alwisX@123")
+password_input.send_keys(MY_PASSWORD)
 
 # # Step 4: Final login
 login_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/button/div')))
