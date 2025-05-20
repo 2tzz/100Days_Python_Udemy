@@ -53,12 +53,12 @@
 - [Day 45:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day45) Web Scraping with Beautiful Soup
 - [Day 46:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day46) Create a Spotify Playlist Using The Musical Time Machine
 - [Day 47:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day47) Create an Automated Amazon Price Tracker
-- [Day 48:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Selenium Webdriver Browser and Game Playing Bot
-- [Day 49:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Automating Job Applications on LinkedIn
-- [Day 50:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Auto Tinder Swiping Bot
-- [Day 51:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Internet Speed Twitter Complaint Bot
-- [Day 52:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Instagram Follower Bot
-- [Day 53:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Scraping Capstone - Data Entry Job Automation
+- [Day 48:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day48) Selenium Webdriver Browser and Game Playing Bot
+- [Day 49:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day49) Automating Job Applications on LinkedIn
+- [Day 50:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day50) Auto Tinder Swiping Bot
+- [Day 51:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day51) Internet Speed Twitter Complaint Bot
+- [Day 52:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day52) Instagram Follower Bot
+- [Day 53:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day53) Web Scraping Capstone - Data Entry Job Automation
 - [Day 54:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to Web Development with Flask
 - [Day 55:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) HTML & URL Parsing in Flask and the Higher Lower Game
 - [Day 56:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Rendering HTML/Static Files and Using Website Templates
