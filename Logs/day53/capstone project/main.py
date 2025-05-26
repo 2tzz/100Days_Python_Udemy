@@ -20,3 +20,12 @@ URL_ZILLOW = os.getenv('URL_ZILLOW')
 response = requests.get(URL_ZILLOW)
 soup = BeautifulSoup(response.text, "html.parser")
 
+response = requests.get(URL_ZILLOW)
+soup = BeautifulSoup(response.text, "html.parser")
+
+response = requests.get(URL_ZILLOW)
+soup = BeautifulSoup(response.text, "html.parser")
+
+response = requests.get(URL_ZILLOW)
+soup = BeautifulSoup(response.text, "html.parser")
+
