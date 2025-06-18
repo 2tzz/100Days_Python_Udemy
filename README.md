@@ -59,8 +59,8 @@
 - [Day 51:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day51) Internet Speed Twitter Complaint Bot
 - [Day 52:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day52) Instagram Follower Bot
 - [Day 53:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day53) Web Scraping Capstone - Data Entry Job Automation
-- [Day 54:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Introduction to Web Development with Flask
-- [Day 55:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) HTML & URL Parsing in Flask and the Higher Lower Game
-- [Day 56:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Rendering HTML/Static Files and Using Website Templates
-- [Day 57:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Templating with Jinja in Flask Applications
-- [Day 58:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Web Foundation Boostrap
+- [Day 54:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day54) Introduction to Web Development with Flask
+- [Day 55:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day55) HTML & URL Parsing in Flask and the Higher Lower Game
+- [Day 56:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day55) Rendering HTML/Static Files and Using Website Templates
+- [Day 57:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day55) Templating with Jinja in Flask Applications
+- [Day 58:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day55) Web Foundation Boostrap
