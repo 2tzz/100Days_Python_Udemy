@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask , render_template
 
 
 app = Flask(__name__)
 
 @app.route("/")
-def higher_lower():
-    return "<h1 style= 'text-align : left ' >Hellow World</h1>" 
+def home():
+    return render_template("index.html") 
 
 
 
