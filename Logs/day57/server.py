@@ -20,7 +20,13 @@ def guess_page(sample_name):
     response.raise_for_status()
     data = response.json()
     guessing_age = data['age']
-    return render_template("guess.html" , name = sample_name , age = guessing_age)
+
+    response_gender = requests.get(url=f"https://api.genderize.io?name={sample_name}" )
+    response_gender.raise_for_status()
+    data_gender = response_gender.json()
+    gender = data_gender['gender']
+
+    return render_template("guess.html" , name = sample_name , age = guessing_age , gender = gender)
 
 
 if __name__ == "__main__":
