@@ -29,7 +29,7 @@ def guess_page(sample_name):
     return render_template("guess.html" , name = sample_name , age = guessing_age , gender = gender)
 
 @app.route('/blog')
-def blogs_page():
+def get_blogs():
     blog_url = 'https://api.npoint.io/2ad2d2fb73e1aa796f90'
     response = requests.get(blog_url)
     response.raise_for_status()
