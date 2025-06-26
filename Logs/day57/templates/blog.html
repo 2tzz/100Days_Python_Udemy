@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My web</title>
+</head>
+<body>
+    {% for blog_post in posts: %}
+        <h3>{{ blog_post["title"] }}</h3>
+        <h3>{{ blog_post["subtitle"] }}</h3>
+    {% endfor %}
+</body>
+<footer>
+    <h5>© {{year}} Prime web, All Rights Reserved</h5>
+</footer>
+</html>
