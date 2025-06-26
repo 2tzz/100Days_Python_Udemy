@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,18 @@
     <div class="top">
         <div class="title"><h1>My Blog</h1></div>
     </div>
-    
+
+    {% for post in all_posts: %}
     <div class="content">
-        {% for post in posts %}
-            <div class="card">
-                <h2>{{ post["title"] }}</h2>
-                <p class="text">{{ post["subtitle"] }}</p>
-                <a href="#">Read</a>
-            </div>
-        {% endfor %}
+        <div class="card ">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+            <a href="{{ url_for('show_post', index=post.id) }}">Read</a>
+        </div>
+
     </div>
-    
-    
+    {% endfor %}
+
 </div>
 </body>
 <footer>
