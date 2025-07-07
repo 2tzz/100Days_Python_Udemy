@@ -1,3 +1,5 @@
+import dotenv
+import os
 from flask import Flask, render_template , request
 import requests
 import smtplib
@@ -5,9 +7,9 @@ from email.mime.text import MIMEText
 
 port = 587
 smtp_server = "smtp.gmail.com"
-my_email = "tthiyura@gmail.com"
-reciver_email = 'tthiyura1@gmail.com'
-passkey = "jnlf jljs geyy sgaq"
+my_email = "XXXXXX"
+reciver_email = 'XXXXXX'
+passkey = "ybto bhrb bdqr mgzo"
 
 
 response = requests.get('https://api.npoint.io/1df9a2e468e2408de0fc')
