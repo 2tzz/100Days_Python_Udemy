@@ -1,4 +1,10 @@
 from flask import Flask, render_template
+import requests
+
+
+response = requests.get('https://api.npoint.io/e6eb6f957cc456f84ab9')
+response.raise_for_status()
+all_posts = response.json()
 
 
 app = Flask(__name__)
@@ -6,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return render_template("index.html")
+    return render_template("index.html" ,  posts = all_posts)
 
 @app.route('/contact')
 def contact_page():
