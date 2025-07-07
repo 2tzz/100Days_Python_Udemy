@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template , request
 import requests
 
 
@@ -30,6 +30,20 @@ def get_blogs(num):
             requested_post = blog_post
     return render_template("post.html", post=requested_post)
 
+@app.route("/form-entry" , methods=['GET', 'POST'])
+def recive_data():
+    if request.method == 'POST':
+        # Get data from form
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        message = request.form['message']
+        
+        
+        
+    
+    # GET method just renders the form
+    return render_template("success.html", Name = name , Email = email , Phone = phone , Message = message  )
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
