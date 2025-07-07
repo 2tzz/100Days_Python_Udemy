@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import requests
 
 app = Flask(__name__)
@@ -8,9 +8,11 @@ app = Flask(__name__)
 def home_page():
     return render_template("index.html" )
 
-@app.route('/login')
-def recive_data():
-    return render_template("sucess.html")
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return render_template("sucess.html" )
+    
 
 # @app.route('/about')
 # def about_page():
