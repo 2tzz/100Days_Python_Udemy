@@ -1,5 +1,13 @@
 from flask import Flask, render_template , request
 import requests
+import smtplib
+from email.mime.text import MIMEText
+
+port = 587
+smtp_server = "smtp.gmail.com"
+my_email = "tthiyura@gmail.com"
+reciver_email = 'tthiyura1@gmail.com'
+passkey = "jnlf jljs geyy sgaq"
 
 
 response = requests.get('https://api.npoint.io/1df9a2e468e2408de0fc')
@@ -21,8 +29,30 @@ def contact_page():
         name = request.form['name']
         email = request.form['email']
         phone = request.form['phone']
-        message = request.form['message']
+        message_text = request.form['message']
         text = "Yor Message sent successfully"
+        mail_sub = f'Thiyura you have messge from {name}'
+
+        email_message = f"""\
+        You have a message from {name} !
+
+        {message_text}
+
+        From: {email}
+        Phone number: {phone}
+        """
+        message = MIMEText(email_message, "plain")
+        message["Subject"] = mail_sub
+        message["From"] = my_email
+        message["To"] = reciver_email
+
+
+        with smtplib.SMTP(smtp_server, port) as server:
+            server.starttls()  # Secure the connection
+            server.login(my_email, passkey)
+            server.sendmail(my_email, reciver_email , message.as_string())
+
+
         return render_template("contact.html"  , Text=text , Name = name)
 
     else:
