@@ -1,24 +1,17 @@
-from flask import Flask, render_template, request
-import requests
 
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
 @app.route('/')
-def home_page():
-    return render_template("index.html" )
+def home():
+    return render_template("index.html")
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        return render_template("sucess.html" )
-    
 
-# @app.route('/about')
-# def about_page():
-#     return render_template("about.html")
+@app.route("/login", methods=["POST"])
+def receive_data():
+    return "💪 Success! Form submitted"
 
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
-   
+    app.run(debug=True)
