@@ -22,7 +22,7 @@ def contact_page():
 def about_page():
     return render_template("about.html")
 
-@app.route('/blog/<num>')
+@app.route('/blog/<int:num>')
 def get_blogs(num):
 
     return render_template("post.html" , posts = all_posts , number = num)
