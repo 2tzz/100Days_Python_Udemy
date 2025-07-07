@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thilakshana Weerasinghe</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="active">
+        <a href="{{ url_for('home_page') }}" class="logo">2tzz.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav>
+            <a href="{{ url_for('home_page') }}" class="{{ 'active' if active_page == 'home' }}">Home</a>
+            <a href="{{ url_for('services_page') }}" class="{{ 'active' if active_page == 'services' }}">Services</a>
+            <a href="{{ url_for('resume_page') }}" class="{{ 'active' if active_page == 'resume' }}">Resume</a>
+            <a href="{{ url_for('portfolio_page') }}" class="{{ 'active' if active_page == 'portfolio' }}">Portfolio</a>
+            <a href="{{ url_for('contact_page') }}" class="{{ 'active' if active_page == 'contact' }}">Contact</a>
+        </nav>
+    </header>
+
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
