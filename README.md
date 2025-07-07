@@ -18,6 +18,7 @@
 - [Day 12:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day12) Scope & Number Guessing Game
 - [Day 13:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day13) Debugging: How to Find and Fix Errors in Your Code
 - [Day 14:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day14) Higher Lower Game Project
+  
 ## 📚 Intermediate
 - [Day 15:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day15) Local Development Environment Setup & The Coffee Machine
 - [Day 16:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day16) Object Oriented Programming (OOP)
@@ -36,6 +37,7 @@
 - [Day 29:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day29) Building a Password Manager GUI App with Tkinter
 - [Day 30:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day30) Errors, Exceptions and JSON Data: Improving the Password Manager
 - [Day 31:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day31) Flash Card App Capstone Project
+  
 ## 👨‍💻 Intermediate+
 - [Day 32:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day32) Send Email (smtplib) & Manage Dates (datetime) - Automated Birthday Wisher
 - [Day 33:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day33) API Endpoints & API Parameters - ISS Overhead Notifier
