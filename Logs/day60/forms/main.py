@@ -8,9 +8,9 @@ app = Flask(__name__)
 def home_page():
     return render_template("index.html" )
 
-# @app.route('/contact')
-# def contact_page():
-#     return render_template("contact.html")
+@app.route('/login')
+def recive_data():
+    return render_template("sucess.html")
 
 # @app.route('/about')
 # def about_page():
