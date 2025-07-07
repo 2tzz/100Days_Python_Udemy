@@ -9,7 +9,7 @@ port = 587
 smtp_server = "smtp.gmail.com"
 my_email = "XXXXXX"
 reciver_email = 'XXXXXX'
-passkey = "ybto bhrb bdqr mgzo"
+passkey = "XXXXXX"
 
 
 response = requests.get('https://api.npoint.io/1df9a2e468e2408de0fc')
