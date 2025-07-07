@@ -1,6 +1,6 @@
 {% include "header.html" %}
 
-<section class="contact ">
+    <section class="contact ">
         <div class="contact-container">
             <div class="contact-box">
                 <h2>Let's Work Together</h2>
@@ -30,8 +30,8 @@
             </div>
 
             <div class="contact-box" >
-                <form id="contactForm" >
-                    <h2 class="heading">Contact <span>Me!</span></h2>
+                <form id="contactForm" name="sentMessage" method="post" action="/contact">
+                    <h2 class="heading">{{ Text }} <span>{{ Spantext }}</span></h2>
                     <div class="field-box">
                         <input type="text" id="name" name="name" placeholder="Full Name" required>
                         <input type="email" id="email" name="email" placeholder="Email Address" required>
@@ -47,5 +47,7 @@
             </div>
         </div>
      </section>
+
+
 
 {% include "footer.html" %}
