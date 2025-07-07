@@ -148,43 +148,13 @@
 
 
 
-// // Add to your script.js
-// document.querySelector('.btn[download]').addEventListener('click', function() {
-//     gtag('event', 'CV_download', {
-//         'event_category': 'Engagement',
-//         'event_label': 'CV Download'
-//     });
-// });
 
-
-// // Initialize EmailJS with your User ID
-// (function() {
-//     emailjs.init('R4PggCaUW0dBRPQWo', {
-//     host: 'smtp.gmail.com',
-//     port: 465,
-//     secure: true
-//     });
-// });
-
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-    
-//     // Validate reCAPTCHA first
-//     if (grecaptcha.getResponse().length === 0) {
-//         alert('Please complete the reCAPTCHA');
-//         return;
-//     }
-
-//     emailjs.sendForm('service_9peacgb', 'template_0jelvoo', this)
-//         .then(() => {
-//             alert('Message sent successfully!');
-//             this.reset();
-//             grecaptcha.reset();
-//         }, (error) => {
-//             console.error('EmailJS Error:', error);
-//             alert(`Failed to send message: ${error.text}`);
-//         });
-// });
+document.querySelector('.btn[download]').addEventListener('click', function() {
+    gtag('event', 'CV_download', {
+        'event_category': 'Engagement',
+        'event_label': 'CV Download'
+    });
+});
 
 
 
