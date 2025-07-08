@@ -258,8 +258,8 @@ section.active {
 
 .home-img .img-box {
     position: relative;
-    width: clamp(500px, 35vw, 300px);
-    height: clamp(500px, 35vw, 300px);
+    width:  35vw ;
+    height:  35vw ;
     border-radius: 50%;
     padding: .5rem;
     display: flex;
@@ -277,8 +277,8 @@ section.active {
 .home-img .img-box::after{
     content: '';
     position: absolute;
-    width: 50rem;
-    height: 50rem;
+    width: 65rem;
+    height: 65rem;
     background: conic-gradient(transparent , transparent , transparent , var(--main-color));
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
