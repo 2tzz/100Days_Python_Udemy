@@ -1,3 +1,0 @@
-# In robots.txt
-User-agent: *
-Disallow: /docs/
