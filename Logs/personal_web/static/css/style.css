@@ -258,8 +258,8 @@ section.active {
 
 .home-img .img-box {
     position: relative;
-    width: 35vw;
-    height: 35vw;
+    width: clamp(500px, 35vw, 300px);
+    height: clamp(500px, 35vw, 300px);
     border-radius: 50%;
     padding: .5rem;
     display: flex;
