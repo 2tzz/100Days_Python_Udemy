@@ -9,10 +9,10 @@
     <ul>
       <ul>
         {% for book in books %}
-          <li>{{ book["title"] }} - {{ book["author"] }} - rating {{ book["rating"] }}/10</li>
+          <li>{{ book["title"] }} - {{ book["author"] }} - rating {{ book["rating"] }}/10 <a href="">edit</a> </li>
         {% else %}
           <p>Library is empty.</p>
-        {% endfor %}
+        {% endfor %} 
       </ul>
     </ul>
 
