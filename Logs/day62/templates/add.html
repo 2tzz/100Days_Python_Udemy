@@ -9,7 +9,22 @@
 
       <h1>Add a new cafe into the database</h1>
 
-      <!-- This is where your WTForm will go -->
+       
+        
+        {# Import Bootstrap form helpers if using Flask-Bootstrap #}
+        {% from 'bootstrap4/form.html' import render_field, render_hidden_errors %}
+        
+        <form method="POST" action="{{ url_for('home') }}">
+            {{ form.csrf_token }}
+
+            <div>
+                {{ form.cafe.label }}<br>
+                {{ form.cafe(size=30) }}
+            </div>           
+          
+
+            <input type="submit" value="Go">
+        </form>
 
 	  <p class="space-above"><a href="#">See all cafes</a></p>
 
