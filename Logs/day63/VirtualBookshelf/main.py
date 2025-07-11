@@ -10,14 +10,13 @@ app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 #     location = StringField('location', validators=[DataRequired()])
     
 all_books = [
-    {
+     {
         "title": "Harry Potter",
         "author": "J. K. Rowling",
         "rating": 9,
     },
-    
-    {
-        "title": "Tale of two cities",
+     {
+        "title": "Tale of Two Cities",
         "author": "Charles Dickens",
         "rating": 7,
     }
