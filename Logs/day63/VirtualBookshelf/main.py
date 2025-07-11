@@ -1,31 +1,36 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-'''
-Red underlines? Install the required packages first: 
-Open the Terminal in PyCharm (bottom left). 
-
-On Windows type:
-python -m pip install -r requirements.txt
-
-On MacOS type:
-pip3 install -r requirements.txt
-
-This will install the packages from requirements.txt for this project.
-'''
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
-all_books = []
+
+# class BookForm(FlaskForm):
+#     cafe = StringField('Cafe name', validators=[DataRequired()])
+#     location = StringField('location', validators=[DataRequired()])
+    
+all_books = [
+    {
+        "title": "Harry Potter",
+        "author": "J. K. Rowling",
+        "rating": 9,
+    }
+    ]
 
 
 @app.route('/')
 def home():
-    pass
+    return render_template('index.html')
 
 
-@app.route("/add")
+@app.route("/add" , methods=['GET', 'POST'] )
 def add():
-    pass
+    if request.method == 'POST':
+        # Get data from form
+        book_name = request.form['book']
+        book_author = request.form['auth']
+        book_rating = request.form['rating']
+    return render_template('add.html' )
 
 
 if __name__ == "__main__":
