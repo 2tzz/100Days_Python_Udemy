@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template , redirect
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired , URL
 import csv
 
 '''
@@ -20,11 +20,17 @@ This will install the packages from requirements.txt for this project.
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-Bootstrap5(app)
+boostrap = Bootstrap5(app)
 
 
 class CafeForm(FlaskForm):
     cafe = StringField('Cafe name', validators=[DataRequired()])
+    location = StringField('location', validators=[DataRequired()])
+    open = StringField('Open', validators=[DataRequired()])
+    close = StringField('Close', validators=[DataRequired()])
+    coffee = StringField('Coffee', validators=[DataRequired()])
+    wifi = StringField('Wifi', validators=[DataRequired()])
+    power = StringField('Power', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
 # Exercise:
@@ -47,11 +53,28 @@ def add_cafe():
     form = CafeForm()
     if form.validate_on_submit():
         print("True")
-    new_cafe = form.cafe.data  
-    # Exercise:
-    # Make the form write a new row into cafe-data.csv
-    # with   if form.validate_on_submit()
-    return render_template('add.html', form=form)
+        new_cafe = form.cafe.data  
+        new_location = form.location.data 
+        open_time = form.open.data 
+        close = form.close.data 
+        coffee = form.coffee.data
+        wifi = form.wifi.data 
+        power = form.power.data
+
+        string = {new_cafe},{new_location},{open_time},{close},{coffee},{wifi},{power}
+
+        with open('Logs\day62\cafe-data.csv', mode='a', encoding='utf-8') as csv_file:
+            csv_file.write(f"\n{string}")
+
+        with open('Logs\day62\cafe-data.csv', newline='', encoding='utf-8') as csv_file:
+            csv_data = csv.reader(csv_file, delimiter=',')
+            list_of_rows = []
+            for row in csv_data:
+                list_of_rows.append(row)
+            return render_template('cafes.html', cafes=list_of_rows)
+    
+    else :
+        return render_template('add.html', form=form)
 
 
 @app.route('/cafes')

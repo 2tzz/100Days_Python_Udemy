@@ -2,6 +2,9 @@
 <!--Don't forget your import here-->
 {% block title %}Add A New Cafe{% endblock %}
 
+{# Import Bootstrap form helpers if using Flask-Bootstrap #}
+{% from 'bootstrap4/form.html' import render_field, render_hidden_errors %}
+
 {% block content %}
 <div class="container">
   <div class="row">
@@ -11,22 +14,36 @@
 
        
         
-        {# Import Bootstrap form helpers if using Flask-Bootstrap #}
-        {% from 'bootstrap4/form.html' import render_field, render_hidden_errors %}
         
-        <form method="POST" action="{{ url_for('home') }}">
+        
+        <form method="POST" action="{{ url_for('add_cafe') }}">
             {{ form.csrf_token }}
 
             <div>
+
                 {{ form.cafe.label }}<br>
-                {{ form.cafe(size=30) }}
+                {{ form.cafe(size=100) }}<br><br>
+                {{ form.location.label }}<br>
+                {{ form.location(size=100) }}<br><br>
+                {{ form.open.label }}<br>
+                {{ form.open(size=100) }}<br><br>
+                {{ form.close.label }}<br>
+                {{ form.close(size=100) }}<br><br>
+                {{ form.coffee.label }}<br>
+                {{ form.coffee(size=100) }}<br><br>
+                {{ form.wifi.label }}<br>
+                {{ form.wifi(size=100) }}<br><br>
+                {{ form.power.label }}<br>
+                {{ form.power(size=100) }}<br><br>
+
             </div>           
           
 
-            <input type="submit" value="Go">
+            <input type="submit" value="Submit"><br><br>
         </form>
 
-	  <p class="space-above"><a href="#">See all cafes</a></p>
+
+    <a class="btn btn-warning btn-lg" href="/cafes" role="button">See all cafes</a>
 
     </div>
   </div>
