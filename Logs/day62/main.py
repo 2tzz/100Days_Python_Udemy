@@ -56,8 +56,17 @@ def add_cafe():
 
         string = {new_cafe},{new_location},{open_time},{close},{coffee},{wifi},{power}
 
-        with open('Logs\day62\cafe-data.csv', mode='a', encoding='utf-8') as csv_file:
-            csv_file.write(f"\n{string}")
+        with open('Logs/day62/cafe-data.csv', mode='a', newline='', encoding='utf-8') as csv_file:
+            writer = csv.writer(csv_file)
+            writer.writerow([
+                new_cafe,
+                new_location,
+                open_time,
+                close,
+                coffee,
+                wifi,
+                power
+            ])
 
         with open('Logs\day62\cafe-data.csv', newline='', encoding='utf-8') as csv_file:
             csv_data = csv.reader(csv_file, delimiter=',')
