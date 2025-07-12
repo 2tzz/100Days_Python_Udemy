@@ -97,6 +97,13 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('home'))
 
+@app.route("/search/<int:id>")
+def delete(id):
+    movie = db.get_or_404(Movie, id)
+    db.session.delete(movie)
+    db.session.commit()
+    return redirect(url_for('home'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
