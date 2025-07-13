@@ -25,10 +25,19 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 Bootstrap5(app)
 
+headers = {
+        "accept": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YTRjMDI0Yzg2ODc4ZTFlYWM1M2UxODZmNWM2ZDM3MyIsIm5iZiI6MTc1MjMyNzE3Ni44MjcwMDAxLCJzdWIiOiI2ODcyNjQwODkxOTUxN2FjZTlhOTgwYjciLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.7z7aPFPHy_0egG6yaJfOa7_WBVkFi02Gdl4PSc_-Kiw"
+    }
+
 class Base(DeclarativeBase):
   pass
 
 db = SQLAlchemy(model_class=Base)
+
+class SearchForm(FlaskForm) :
+    movie = StringField('movie', validators=[DataRequired()])
+    submit = SubmitField('Submit')
 
 class MovieForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
@@ -97,12 +106,33 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('home'))
 
+@app.route("/search")
+def search():
+    form = SearchForm()
+    
+    if form.validate_on_submit():
+        new_movie = Movie(movie=form.search.data)       
+        movie_name = new_movie.replace(' ','+')
+        url = f"https://api.themoviedb.org/3/search/movie?query={movie_name}"
+        response = requests.get(url, headers=headers)
+        data = response.json()
+
+        for item in data['results'] :
+            print (item['original_title'])
+            index = data['results'].index(item)
+
+        return redirect(url_for('search'))
+    
+    return redirect(url_for('search'))
+
+
 @app.route("/search/<int:id>")
-def delete(id):
-    movie = db.get_or_404(Movie, id)
-    db.session.delete(movie)
-    db.session.commit()
+def search(id):
+
+    
+   
     return redirect(url_for('home'))
+
 
 
 if __name__ == '__main__':

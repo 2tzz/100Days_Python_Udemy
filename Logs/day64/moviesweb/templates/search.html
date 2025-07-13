@@ -6,12 +6,17 @@
 {% block content %}
 <div class="container">
     <h1 class="heading">Search Movie</h1>
-    <!-- add a search field 
-    add a submit button to search
+        
+        <form method="POST" action="{{ url_for('search') }}">
+            {{ form.csrf_token }}
 
-    refresh with post request and show all search items as limks
-    <a href=""></a>
+            <div>
+                {{ form.search.label }}<br>
+                {{ form.search(size=30) }}
+            </div>           
 
-    if click one link add that to the movie database -->
+            <input type="submit" value="Go">
+
+   
 </div>
 {% endblock %}

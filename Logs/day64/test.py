@@ -1,6 +1,9 @@
 import requests
 
-movie_name = 'Harry+Potter'
+movie_name = 'Harry Potter    '
+
+new_movie = movie_name.replace(' ','+')
+
 
 url = f"https://api.themoviedb.org/3/search/movie?query={movie_name}"
 
@@ -10,5 +13,7 @@ headers = {
 }
 
 response = requests.get(url, headers=headers)
+data = response.json()
 
-print(response.text)
+for item in data['results'] :
+    print (item['original_title'])
