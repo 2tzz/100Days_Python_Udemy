@@ -1,22 +1,82 @@
 {% extends 'base.html' %}
-{% from 'bootstrap5/form.html' import render_form %}
 
-{% block title %}Add Movie{% endblock %}
+{% block title %}Search Movies{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="content">
     <h1 class="heading">Search Movie</h1>
-        
-        <form method="POST" action="{{ url_for('search') }}">
-            {{ form.csrf_token }}
-
-            <div>
-                {{ form.search.label }}<br>
-                {{ form.search(size=30) }}
-            </div>           
-
-            <input type="submit" value="Go">
-
-   
+    
+    <div style="width: 100%; padding: 0 1rem;">
+        <form method="POST" action="{{ url_for('search') }}" style="max-width: 800px; margin: 0 auto 3rem;">
+            {{ form.hidden_tag() }}
+            <div style="display: flex; gap: 10px;">
+                {{ form.movie(class="form-control", style="flex-grow: 1; padding: 10px; border-radius: 6px; border: 1px solid #ddd;") }}
+                {{ form.submit(class="button", style="padding: 10px 20px;") }}
+            </div>
+        </form>
+    </div>
+    
+    {% if results %}
+        <div style="width: 100%; padding: 0 1rem;">
+            {% for movie in results %}
+                <div class="card" style="width: 100%; height: auto; min-height: 0; perspective: none; margin: 1rem auto;">
+                    <div class="front" style="background-image: url('https://image.tmdb.org/t/p/w500{{ movie.poster_path }}'); transform: none; position: relative;">
+                        <div style="position: absolute; bottom: 20px; left: 20px; text-align: left;">
+                            <h3 style="margin: 0; font-size: 1.618rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">{{ movie.title }}</h3>
+                            <p style="margin: 5px 0 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+                                <small>{{ movie.release_date }}</small>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="back" style="transform: none; position: relative; padding: 2em; text-align: left;">
+                        <div class="title">{{ movie.title }} <span class="release_date">({{ movie.release_date }})</span></div>
+                        
+                        {% if movie.overview %}
+                        <p class="overview">{{ movie.overview }}</p>
+                        {% endif %}
+                        
+                        <div style="position: absolute; bottom: 20px; right: 20px;">
+                            <a href="{{ url_for('add_from_api', movie_id=movie.id) }}" class="button">Add Movie</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
 </div>
+
+<style>
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (min-width: 768px) {
+        .card {
+            flex-direction: row;
+            height: 300px;
+        }
+        
+        .front, .back {
+            width: 50%;
+            position: relative;
+        }
+        
+        .front {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        .back {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+    
+    .form-control {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 1rem;
+    }
+</style>
 {% endblock %}
