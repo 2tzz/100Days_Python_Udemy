@@ -95,9 +95,48 @@ def get_all_cafes():
             "coffee_price": cafe.coffee_price
             }
         cafes_list.append(cafe_dict)
-        
+
     return jsonify(cafes=cafes_list)        
         
+
+@app.route("/search")
+def search_cafes():
+    # Get the 'loc' parameter from the URL (e.g., /search?loc=London)
+    user_loc = request.args.get("loc")
+    
+    if not user_loc:
+        return jsonify(
+            error={"Bad Request": "Please provide a 'loc' parameter in the URL."}
+        ), 400
+    
+    # Filter cafes by location (case-insensitive)
+    matching_cafes = Cafe.query.filter(Cafe.location.ilike(f"%{user_loc}%")).all()
+    
+    if not matching_cafes:
+        return jsonify(
+            error={"Not Found": "Sorry, we don't have a cafe at that location."}
+        ), 404
+    
+  
+    cafes_list = [
+        {
+            "id": cafe.id,
+            "name": cafe.name,
+            "map_url": cafe.map_url,
+            "img_url": cafe.img_url,
+            "location": cafe.location,
+            "seats": cafe.seats,
+            "has_toilet": cafe.has_toilet,
+            "has_wifi": cafe.has_wifi,
+            "has_sockets": cafe.has_sockets,
+            "can_take_calls": cafe.can_take_calls,
+            "coffee_price": cafe.coffee_price,
+        }
+        for cafe in matching_cafes
+    ]
+    
+    return jsonify(cafes=cafes_list)
+
 
 # HTTP POST - Create Record
 
