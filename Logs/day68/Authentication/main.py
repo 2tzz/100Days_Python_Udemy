@@ -33,31 +33,67 @@ with app.app_context():
     db.create_all()
 
 
-@app.route('/')
-def home():
+@app.route('/' )
+def home():     
     return render_template("index.html")
 
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
+    if request.method == 'POST':
+        # Hash the password before storing it
+        hashed_password = generate_password_hash(
+            request.form['password'],
+            method='pbkdf2:sha256',
+            salt_length=8
+        )
+        
+        new_user = User(
+            name=request.form['name'],
+            email=request.form['email'],
+            password=hashed_password
+        )
+        
+        db.session.add(new_user)
+        db.session.commit()
+        
+        # Redirect to secrets page after registration
+        return redirect(url_for('secrets', name=request.form['name']))
     
     return render_template("register.html")
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password = request.form.get('password')
+        
+        # Find user by email
+        user = db.session.execute(db.select(User).where(User.email == email)).scalar()
+        
+        # Check if user exists and password is correct
+        if user and check_password_hash(user.password, password):
+            login_user(user)
+            return redirect(url_for('secrets'))
+        else:
+            flash('Invalid email or password', 'error')
+            return redirect(url_for('login'))
+    
     return render_template("login.html")
 
 
 @app.route('/secrets')
+@login_required
 def secrets():
-    return render_template("secrets.html")
+    return render_template("secrets.html", name=current_user.name)
 
 
 @app.route('/logout')
+@login_required
 def logout():
-    pass
-
+    logout_user()
+    return redirect(url_for('home'))
 
 @app.route('/download')
 def download():
