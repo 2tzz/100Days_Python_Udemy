@@ -28,3 +28,6 @@ class CreateLoginForm(FlaskForm):
     submit = SubmitField("Login")
 
 # TODO: Create a CommentForm so users can leave comments below posts
+class CreateCommentForm(FlaskForm):
+    comment = StringField("Write your comment", validators=[DataRequired()])
+    submit = SubmitField("Submit")

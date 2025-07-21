@@ -10,7 +10,7 @@ from sqlalchemy import Integer, String, Text
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 # Import your forms from the forms.py
-from forms import CreatePostForm , CreateRegForm , CreateLoginForm
+from forms import CreatePostForm , CreateRegForm , CreateLoginForm ,CreateCommentForm
 from functools import wraps
 from flask import abort
 
@@ -30,7 +30,7 @@ login_manager.init_app(app)
 # CREATE DATABASE
 class Base(DeclarativeBase):
     pass
-app.config['SQLALCHEMY_DATABASE_URI'] = r'sqlite:///D:\0000\100 days\Logs\day69\blog_with_authentication\instance\posts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
@@ -72,7 +72,10 @@ class User(UserMixin, db.Model):
     # Child Relationship (One-to-Many)
     posts = relationship("BlogPost", back_populates="author")
    
-
+# class Comments( db.Model):
+#     __tablename__ = "comments"
+#     id: Mapped[int] = mapped_column(Integer, primary_key=True)
+#     comments: Mapped[str] = mapped_column(String(250), nullable=False)
 
 
 # TODO: Use Werkzeug to hash the user's password when creating a new user.
@@ -140,10 +143,12 @@ def get_all_posts():
 
 
 # TODO: Allow logged-in users to comment on posts
-@app.route("/post/<int:post_id>")
+@app.route("/post/<int:post_id>", methods=['GET', 'POST'])
 @login_required
-
 def show_post(post_id):
+    form = CreateCommentForm()
+    if form.validate_on_submit():
+
     requested_post = db.get_or_404(BlogPost, post_id)
     return render_template("post.html", post=requested_post)
 
