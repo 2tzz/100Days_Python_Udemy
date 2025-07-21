@@ -14,6 +14,8 @@ from forms import CreatePostForm , CreateRegForm , CreateLoginForm
 from functools import wraps
 from flask import abort
 
+import os
+
 
 
 app = Flask(__name__)
@@ -28,7 +30,7 @@ login_manager.init_app(app)
 # CREATE DATABASE
 class Base(DeclarativeBase):
     pass
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = r'sqlite:///D:\0000\100 days\Logs\day69\blog_with_authentication\instance\posts.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
