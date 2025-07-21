@@ -10,7 +10,7 @@
           <h2 class="subheading">{{ post.subtitle }}</h2>
           <span class="meta"
             >Posted by
-            <a href="#">{{ post.author }}</a>
+            <a href="#">{{ post.author.username }}</a>
             on {{ post.date }}
           </span>
         </div>
@@ -27,11 +27,13 @@
         {{ post.body|safe }}
         <!--TODO: Only show Edit Post button if user id is 1 (admin user) -->
         <div class="d-flex justify-content-end mb-4">
+          {% if current_user.id == 1 %}
           <a
             class="btn btn-primary float-right"
             href="{{url_for('edit_post', post_id=post.id)}}"
             >Edit Post</a
           >
+          {% endif %}
         </div>
 
         <!-- Comments Area -->
