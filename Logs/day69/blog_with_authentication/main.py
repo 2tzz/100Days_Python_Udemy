@@ -148,8 +148,7 @@ def get_all_posts():
 def show_post(post_id):
     form = CreateCommentForm()
     if form.validate_on_submit():
-
-    requested_post = db.get_or_404(BlogPost, post_id)
+        requested_post = db.get_or_404(BlogPost, post_id)
     return render_template("post.html", post=requested_post)
 
 
