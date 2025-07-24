@@ -70,18 +70,18 @@
   ## 🏆 Advanced
 - [Day 59:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day59) Blog Capstone Project Part 2 - Adding Styling
 - [Day 60:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day60) Make POST Requests with Flask and HTML Forms
-- [Day 61:](https://github.com/phillipai/100-days-of-code-python/tree/main/day61) Building Advanced Forms with Flask-WTForms
-- [Day 62:](https://github.com/phillipai/100-days-of-code-python/tree/main/day62) Flask, WTForms, Bootstrap, and CSV - Coffee & Wifi Project
-- [Day 63:](https://github.com/phillipai/100-days-of-code-python/tree/main/day63) Databases and with SQLite and SQLAlchemy
-- [Day 64:](https://github.com/phillipai/100-days-of-code-python/tree/main/day64) My Top 10 Movies Website
-- [Day 65:](https://github.com/phillipai/100-days-of-code-python/tree/main/day65) How to Create a Website That People Will Love
-- [Day 66:](https://github.com/phillipai/100-days-of-code-python/tree/main/day66) Building Your Own API with RESTful Routing
-- [Day 67:](https://github.com/phillipai/100-days-of-code-python/tree/main/day67) Blog Capstone Project Part 3 - RESTful Routing
-- [Day 68:](https://github.com/phillipai/100-days-of-code-python/tree/main/day68) Authentication with Flask
-- [Day 69:](https://github.com/phillipai/100-days-of-code-python/tree/main/day69) Blog Capstone Project Part 4 - Adding Users
-- [Day 70:](https://github.com/phillipai/100-days-of-code-python/tree/main/day70) Deploying Your Web Application with Heroku
-- [Day 71:](https://github.com/phillipai/100-days-of-code-python/tree/main/day71) Data Exploration with Pandas: College Major vs. Your Salary
-- [Day 72:](https://github.com/phillipai/100-days-of-code-python/tree/main/day72) Data Visualisation with Matplotlib: Programming Languages
+- [Day 61:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day61) Building Advanced Forms with Flask-WTForms
+- [Day 62:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day62) Flask, WTForms, Bootstrap, and CSV - Coffee & Wifi Project
+- [Day 63:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day63) Databases and with SQLite and SQLAlchemy
+- [Day 64:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day64) My Top 10 Movies Website
+- [Day 65:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day65) How to Create a Website That People Will Love
+- [Day 66:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day66) Building Your Own API with RESTful Routing
+- [Day 67:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day67) Blog Capstone Project Part 3 - RESTful Routing
+- [Day 68:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day68) Authentication with Flask
+- [Day 69:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day69) Blog Capstone Project Part 4 - Adding Users
+- [Day 70:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day70) Deploying Your Web Application with Heroku
+- [Day 71:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day71) Data Exploration with Pandas: College Major vs. Your Salary
+- [Day 72:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day72) Data Visualisation with Matplotlib: Programming Languages
 - [Day 73:](https://github.com/phillipai/100-days-of-code-python/tree/main/day73) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
 - [Day 74:](https://github.com/phillipai/100-days-of-code-python/tree/main/day74) Google Trends Data: Resampling and Visualising Time Series
 - [Day 75:](https://github.com/phillipai/100-days-of-code-python/tree/main/day75) Beautiful Plotly Charts & Analysing the Android App Store
