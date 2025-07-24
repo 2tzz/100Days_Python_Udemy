@@ -1,1 +1,1 @@
-learned colo theory and ux principles
+learned color theory and ux principles
