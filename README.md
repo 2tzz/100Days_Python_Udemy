@@ -82,18 +82,18 @@
 - [Day 70:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day70) Deploying Your Web Application with Heroku
 - [Day 71:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day71) Data Exploration with Pandas: College Major vs. Your Salary
 - [Day 72:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day72) Data Visualisation with Matplotlib: Programming Languages
-- [Day 73:](https://github.com/phillipai/100-days-of-code-python/tree/main/day73) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
-- [Day 74:](https://github.com/phillipai/100-days-of-code-python/tree/main/day74) Google Trends Data: Resampling and Visualising Time Series
-- [Day 75:](https://github.com/phillipai/100-days-of-code-python/tree/main/day75) Beautiful Plotly Charts & Analysing the Android App Store
-- [Day 76:](https://github.com/phillipai/100-days-of-code-python/tree/main/day76) Computation with NumPy and N-Dimensional Arrays
-- [Day 77:](https://github.com/phillipai/100-days-of-code-python/tree/main/day77) Linear Regression and Data Visualisation with Seaborn
-- [Day 78:](https://github.com/phillipai/100-days-of-code-python/tree/main/day78) Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
-- [Day 79:](https://github.com/phillipai/100-days-of-code-python/tree/main/day79) The Tragic Discovery of Handwashing: t-Tests & Distributions
-- [Day 80:](https://github.com/phillipai/100-days-of-code-python/tree/main/day80) Capstone Project - Predict House Prices
+- [Day 73:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day73) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
+- [Day 74:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day74) Google Trends Data: Resampling and Visualising Time Series
+- [Day 75:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day75) Beautiful Plotly Charts & Analysing the Android App Store
+- [Day 76:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day76) Computation with NumPy and N-Dimensional Arrays
+- [Day 77:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day77) Linear Regression and Data Visualisation with Seaborn
+- [Day 78:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day78) Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
+- [Day 79:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day79) The Tragic Discovery of Handwashing: t-Tests & Distributions
+- [Day 80:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day80) Capstone Project - Predict House Prices
 
 ## ⚔ Professional Portfolio Projects
-- [Day 81:](https://github.com/phillipai/100-days-of-code-python/tree/main/day81) Text to Morse Code Converter
-- [Day 82:](https://github.com/phillipai/100-days-of-code-python/tree/main/day82) Portfolio Website
+- [Day 81:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day81) Text to Morse Code Converter
+- [Day 82:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day82) Portfolio Website
 - [Day 83:](https://github.com/phillipai/100-days-of-code-python/tree/main/day83) Tic Tac Toe
 - [Day 84:](https://github.com/phillipai/100-days-of-code-python/tree/main/day84) Image Watermarking Desktop App
 - [Day 85:](https://github.com/phillipai/100-days-of-code-python/tree/main/day85) Typing Speed Test App
