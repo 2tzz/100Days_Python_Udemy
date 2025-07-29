@@ -79,38 +79,39 @@
 - [Day 67:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day67) Blog Capstone Project Part 3 - RESTful Routing
 - [Day 68:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day68) Authentication with Flask
 - [Day 69:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day69) Blog Capstone Project Part 4 - Adding Users
-- [Day 70:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day71) Deploying Your Web Application with Heroku
-- [Day 71:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day72) Data Exploration with Pandas: College Major vs. Your Salary
-- [Day 72:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day73) Data Visualisation with Matplotlib: Programming Languages
-- [Day 73:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day74) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
-- [Day 74:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day75) Google Trends Data: Resampling and Visualising Time Series
-- [Day 75:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day76) Beautiful Plotly Charts & Analysing the Android App Store
-- [Day 76:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day77) Computation with NumPy and N-Dimensional Arrays
-- [Day 77:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day78) Linear Regression and Data Visualisation with Seaborn
-- [Day 78:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day79) Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
-- [Day 79:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day80) The Tragic Discovery of Handwashing: t-Tests & Distributions
-- [Day 80:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day81) Capstone Project - Predict House Prices
+- [Day 70:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day70) Advance Git,Github and Version Control
+- [Day 71:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day71) Deploying Your Web Application with Heroku
+- [Day 72:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day72) Data Exploration with Pandas: College Major vs. Your Salary
+- [Day 73:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day73) Data Visualisation with Matplotlib: Programming Languages
+- [Day 74:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day74) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
+- [Day 75:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day75) Google Trends Data: Resampling and Visualising Time Series
+- [Day 76:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day76) Beautiful Plotly Charts & Analysing the Android App Store
+- [Day 77:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day77) Computation with NumPy and N-Dimensional Arrays
+- [Day 78:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day78) Linear Regression and Data Visualisation with Seaborn
+- [Day 79:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day79) Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
+- [Day 80:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day80) The Tragic Discovery of Handwashing: t-Tests & Distributions
+- [Day 81:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day81) Capstone Project - Predict House Prices
 
 ## ⚔ Professional Portfolio Projects
-- [Day 81:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day82) Text to Morse Code Converter
-- [Day 82:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day83) Portfolio Website
-- [Day 83:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day84) Tic Tac Toe
-- [Day 84:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day85) Image Watermarking Desktop App
-- [Day 85:](https://github.com/phillipai/100-days-of-code-python/tree/main/day86) Typing Speed Test App
-- [Day 86:](https://github.com/phillipai/100-days-of-code-python/tree/main/day87) Breakout: The Famous Arcade Game
-- [Day 87:](https://github.com/phillipai/100-days-of-code-python/tree/main/day88) Cafe and Wifi Website
-- [Day 88:](https://github.com/phillipai/100-days-of-code-python/tree/main/day89) To Do Agenda App
-- [Day 89:](https://github.com/phillipai/100-days-of-code-python/tree/main/day90) Disappearing Text Writing App
-- [Day 90:](https://github.com/phillipai/100-days-of-code-python/tree/main/day91) Convert PDF to Audiobook
-- [Day 91:](https://github.com/phillipai/100-days-of-code-python/tree/main/day92) Image to Color List
-- [Day 92:](https://github.com/phillipai/100-days-of-code-python/tree/main/day93) Amazon Canada Web Scraper
-- [Day 93:](https://github.com/phillipai/100-days-of-code-python/tree/main/day94) Google Dinosaur Game Bot
-- [Day 94:](https://github.com/phillipai/100-days-of-code-python/tree/main/day95) Space Invaders
-- [Day 95:](https://github.com/phillipai/100-days-of-code-python/tree/main/day96) Custom API
-- [Day 96:](https://github.com/phillipai/100-days-of-code-python/tree/main/day97) An Online Shop
-- [Day 97:](https://github.com/phillipai/100-days-of-code-python/tree/main/day98) Percentage Calculator
-- [Day 98:](https://github.com/phillipai/100-days-of-code-python/tree/main/day99) Analyzing and Visualizing the Space Race
-- [Day 99:](https://github.com/phillipai/100-days-of-code-python/tree/main/day100) Analyzing Deaths Involving Police in the United States
+- [Day 82:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day82) Text to Morse Code Converter
+- [Day 83:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day83) Portfolio Website
+- [Day 84:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day84) Tic Tac Toe
+- [Day 85:](https://github.com/2tzz/100Days_Python_Udemy/tree/main/Logs/day85) Image Watermarking Desktop App
+- [Day 86:](https://github.com/phillipai/100-days-of-code-python/tree/main/day86) Typing Speed Test App
+- [Day 87:](https://github.com/phillipai/100-days-of-code-python/tree/main/day87) Breakout: The Famous Arcade Game
+- [Day 88:](https://github.com/phillipai/100-days-of-code-python/tree/main/day88) Cafe and Wifi Website
+- [Day 89:](https://github.com/phillipai/100-days-of-code-python/tree/main/day89) To Do Agenda App
+- [Day 90:](https://github.com/phillipai/100-days-of-code-python/tree/main/day90) Disappearing Text Writing App
+- [Day 91:](https://github.com/phillipai/100-days-of-code-python/tree/main/day91) Convert PDF to Audiobook
+- [Day 92:](https://github.com/phillipai/100-days-of-code-python/tree/main/day92) Image to Color List
+- [Day 93:](https://github.com/phillipai/100-days-of-code-python/tree/main/day93) Amazon Canada Web Scraper
+- [Day 94:](https://github.com/phillipai/100-days-of-code-python/tree/main/day94) Google Dinosaur Game Bot
+- [Day 95:](https://github.com/phillipai/100-days-of-code-python/tree/main/day95) Space Invaders
+- [Day 96:](https://github.com/phillipai/100-days-of-code-python/tree/main/day96) Custom API
+- [Day 97:](https://github.com/phillipai/100-days-of-code-python/tree/main/day97) An Online Shop
+- [Day 98:](https://github.com/phillipai/100-days-of-code-python/tree/main/day98) Percentage Calculator
+- [Day 99:](https://github.com/phillipai/100-days-of-code-python/tree/main/day99) Analyzing and Visualizing the Space Race
+- [Day 100:](https://github.com/phillipai/100-days-of-code-python/tree/main/day100) Analyzing Deaths Involving Police in the United States
 - [Day 100:](https://github.com/phillipai/100-days-of-code-python/tree/main/day100) Predicting Earnings using Multivariable Regression
 
 ## ⚙ Tools and Technologies Covered
